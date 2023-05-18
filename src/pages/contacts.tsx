@@ -1,9 +1,8 @@
 import { Layout } from "@/components/common/Layout";
-
-export default function About() {
+export default function Contacts() {
   return (
     <Layout>
-      <div>About</div>
+      <div>Contacts</div>
     </Layout>
   );
 }

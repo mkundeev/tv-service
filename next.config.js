@@ -5,6 +5,7 @@ const nextConfig = {
     locales: ["ua", "ru"],
     //  default locale used when the non-locale paths are visited
     defaultLocale: "ua",
+    localeDetection: false,
   },
 };
 

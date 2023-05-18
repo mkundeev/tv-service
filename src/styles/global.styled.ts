@@ -16,10 +16,11 @@ export const GlobalStyles = createGlobalStyle`
   p,
   li {
     margin: 0;
+    padding: 0;
   }
 
   body {
-    font-family: Poppins, sans-serif;
+    font-family: Roboto, sans-serif;
     min-height: 100vh;
     scroll-behavior: smooth;
     text-rendering: optimizeSpeed;
@@ -32,6 +33,10 @@ export const GlobalStyles = createGlobalStyle`
   a {
   color: inherit;
   text-decoration: none;
+  font-size: 14px;
+}
+p{
+    font-size: 14px;
 }
 
 

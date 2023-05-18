@@ -1,5 +1,6 @@
 import Head from "next/head";
-import { Layout } from "@/components/Layout";
+import { Layout } from "@/components/common/Layout";
+import Container from "@/styles/container.styled";
 
 export default function Home() {
   return (
@@ -7,7 +8,7 @@ export default function Home() {
       <Head>
         <title>Next project</title>
       </Head>
-      <>
+      <Container>
         <h1>Next.js project</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
@@ -15,7 +16,7 @@ export default function Home() {
           architecto consectetur officia similique ducimus neque. Provident
           recusandae voluptas rerum, ut ducimus adipisci.
         </p>
-      </>
+      </Container>
     </Layout>
   );
 }
