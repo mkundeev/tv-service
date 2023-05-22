@@ -6,11 +6,11 @@ export default function ChangeLocale() {
   const { locale, pathname } = useRouter();
   return (
     <Styled.LocaleContainer>
-      <Styled.LocaleLink href={pathname} locale="ua" active={locale === "ua"}>
+      <Styled.LocaleLink href={pathname} locale="ua" $active={locale === "ua"}>
         UA
       </Styled.LocaleLink>
       <Styled.Divider>|</Styled.Divider>
-      <Styled.LocaleLink href={pathname} locale="ru" active={locale === "ru"}>
+      <Styled.LocaleLink href={pathname} locale="ru" $active={locale === "ru"}>
         RU
       </Styled.LocaleLink>
     </Styled.LocaleContainer>

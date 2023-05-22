@@ -3,10 +3,11 @@ import Link from "next/link";
 import { COLORS } from "@/theme";
 
 interface LinkProps {
-  active: boolean;
+  $active: boolean;
 }
 export const LocaleLink = styled(Link)`
-  color: ${({ active }: LinkProps) => (active ? COLORS.primary : COLORS.black)};
+  color: ${({ $active }: LinkProps) =>
+    $active ? COLORS.primary : COLORS.white};
 `;
 
 export const Divider = styled.div`

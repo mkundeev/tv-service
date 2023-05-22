@@ -7,6 +7,10 @@ const nextConfig = {
     defaultLocale: "ua",
     localeDetection: false,
   },
+  compiler: {
+    // Enables the styled-components SWC transform
+    styledComponents: true,
+  },
 };
 
 module.exports = nextConfig;

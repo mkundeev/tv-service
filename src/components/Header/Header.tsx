@@ -9,7 +9,7 @@ import Navigation from "./Navigation";
 
 export default function Header() {
   return (
-    <header>
+    <Styled.Header>
       <Styled.HeaderContainer>
         <Styled.HeaderContant>
           <Logo />
@@ -19,6 +19,6 @@ export default function Header() {
         </Styled.HeaderContant>
         <Navigation />
       </Styled.HeaderContainer>
-    </header>
+    </Styled.Header>
   );
 }

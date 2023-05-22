@@ -1,8 +1,9 @@
 export const COLORS = {
   white: "#ffffff",
-  primary: "#3CA7DB",
+  primary: "#FF903F",
   accent: "#F3393A",
   darkGrey: "#656565",
   lightGrey: "#AFAFAF",
-  black: "#2E2E2E",
+  black: "#262626",
+  headerBgc: "#000000",
 };

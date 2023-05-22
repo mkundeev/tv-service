@@ -1,3 +1,4 @@
+import { COLORS } from "@/theme";
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
@@ -17,6 +18,7 @@ export const GlobalStyles = createGlobalStyle`
   li {
     margin: 0;
     padding: 0;
+    color: ${COLORS.white};
   }
 
   body {
