@@ -1,17 +1,18 @@
-import Container from "@/styles/container.styled";
+import Divider from "../common/Divider";
+import Section from "../common/styles/Section.styled";
 import * as Styled from "./styles/HomeMain.styled";
 import { useRouter } from "next/router";
 
 export default function HomeMain() {
   const { locale } = useRouter();
   return (
-    <Styled.Section>
+    <Section>
       <Styled.HomeMainContainer>
         <Styled.TextBlock>
           {locale === "ua" ? (
             <>
-              <h2>Наші послуги</h2>
-              <p>
+              <Styled.Header>Наші послуги</Styled.Header>
+              <Styled.Text>
                 Наша компанія надає послуги з ремонту, діагностики та
                 налаштування телевізорів. Надаємо послуги безпосередньо вдома у
                 клієнтів або в майстерні. Обслуговуємо будь-які райони Києва. Ми
@@ -27,12 +28,12 @@ export default function HomeMain() {
                 підбере потрібні деталі та комплектуючі для ремонту. Ми
                 відремонтуємо та налаштуємо ваш телевізор якісно та недорого, та
                 ще й з гарантією.
-              </p>
+              </Styled.Text>
             </>
           ) : (
             <>
-              <h2>Наши услуги</h2>
-              <p>
+              <Styled.Header>Наши услуги</Styled.Header>
+              <Styled.Text>
                 Наша компания предоставляет услуги по ремонту, диагностике и
                 настройке телевизоров. Предоставляем услуги непосредственно дома
                 у клиентов или в мастерской. Обслуживаем любые районы Киева.
@@ -48,11 +49,12 @@ export default function HomeMain() {
                 подберет детали и комплектующие для ремонта. Мы отремонтируем и
                 настроим ваш телевизор качественно и недорого, да еще с
                 гарантией.
-              </p>
+              </Styled.Text>
             </>
           )}
         </Styled.TextBlock>
       </Styled.HomeMainContainer>
-    </Styled.Section>
+      <Divider />
+    </Section>
   );
 }

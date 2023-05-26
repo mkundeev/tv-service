@@ -3,13 +3,16 @@ import React from "react";
 import { HiPhone } from "react-icons/hi";
 import * as Styled from "./styles/Phone.styled";
 
-export default function Phone() {
+type IProps = {
+  iconSize?: number;
+};
+export default function Phone({ iconSize }: IProps) {
   return (
     <Styled.PhoneContainer>
-      <HiPhone color={COLORS.primary} size={24} />
+      <HiPhone color={COLORS.primary} size={iconSize || 24} />
       <Styled.PhoneList>
         <Styled.PhoneItem>
-          <a href="tel:+380442337508">(044) 233-75-08</a>
+          <a href="tel:+380442337508">+38 (044) 233-75-08</a>
         </Styled.PhoneItem>
         <Styled.PhoneItem>
           <a href="tel:+380509747722">+38 (050) 974-77-22</a>

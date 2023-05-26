@@ -1,5 +1,5 @@
 import React from "react";
-import Container from "@/styles/container.styled";
+import Container from "@/components/common/styles/Container.styled";
 import Logo from "../common/Logo";
 import Phone from "./Phone";
 import * as Styled from "./styles/Header.styled";

@@ -4,6 +4,7 @@ export const COLORS = {
   accent: "#F3393A",
   darkGrey: "#656565",
   lightGrey: "#AFAFAF",
-  black: "#262626",
+  bgc: "#262626",
   headerBgc: "#000000",
+  divider: "#fff8e1",
 };

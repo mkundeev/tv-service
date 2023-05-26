@@ -5,6 +5,7 @@ export const PhoneContainer = styled.div`
   display: flex;
   gap: 10px;
   align-items: center;
+  width: fit-content;
 `;
 
 export const PhoneList = styled.ul`

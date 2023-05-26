@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Container from "@/styles/container.styled";
+import Container from "@/components/common/styles/Container.styled";
 import { COLORS } from "@/theme";
 
 export const HeaderContant = styled.div`
@@ -16,5 +16,9 @@ export const HeaderContainer = styled(Container)`
 `;
 
 export const Header = styled.header`
+  width: 100%;
+  height: 100px;
   background-color: ${COLORS.headerBgc};
+  position: fixed;
+  z-index: 1;
 `;
