@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import bg from "../../../../public/tv.png";
+import bg from "../../../../public/tv-main.jpg";
 import Container from "@/components/common/styles/Container.styled";
 import Section from "@/components/common/styles/Section.styled";
 

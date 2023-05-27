@@ -5,6 +5,7 @@ import Container from "@/components/common/styles/Container.styled";
 
 export const HomeHeroSection = styled(Section)`
   padding-top: 100px;
+  height: 100vh;
 `;
 
 export const HomeHeroContainer = styled(Container)`
