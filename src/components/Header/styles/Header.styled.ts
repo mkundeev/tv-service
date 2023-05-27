@@ -2,17 +2,11 @@ import styled from "styled-components";
 import Container from "@/components/common/styles/Container.styled";
 import { COLORS } from "@/theme";
 
-export const HeaderContant = styled.div`
+export const HeaderContainer = styled(Container)`
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 10px;
-`;
-
-export const HeaderContainer = styled(Container)`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 `;
 
 export const Header = styled.header`

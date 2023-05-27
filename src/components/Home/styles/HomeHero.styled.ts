@@ -4,17 +4,16 @@ import bg from "@/../public/hero.jpg";
 import Container from "@/components/common/styles/Container.styled";
 
 export const HomeHeroSection = styled(Section)`
-  padding-top: 100px;
   height: 100vh;
-`;
-
-export const HomeHeroContainer = styled(Container)`
-  height: 100%;
-  padding-top: 100px;
   background-image: url(${bg.src});
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: bottom;
+`;
+
+export const HomeHeroContainer = styled(Container)`
+  padding-top: 100px;
+  height: 100%;
 `;
 
 export const Title = styled.h1`
@@ -24,12 +23,12 @@ export const Title = styled.h1`
 
 export const TextContainer = styled.div`
   width: fit-content;
-  margin: 40px auto 0;
+  margin: 50px auto 0;
 
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 30px;
 
   p,
   a {

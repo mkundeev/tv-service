@@ -1,0 +1,15 @@
+export { SvgBravis } from "./SvgBravis";
+export { SvgErgo } from "./SvgErgo";
+export { SvgEricsson } from "./SvgEricsson";
+export { SvgGrunding } from "./SvgGrunding";
+export { SvgJVC } from "./SvgJVC";
+export { SvgKivi } from "./SvgKivi";
+export { SvgPioneer } from "./SvgPioneer";
+export { SvgTCL } from "./SvgTCL";
+export { SvgLG } from "./SvgLG";
+export { SvgSamsung } from "./SvgSamsung";
+export { SvgSony } from "./SvgSony";
+export { SvgToshiba } from "./SvgToshiba";
+export { SvgPhanasonic } from "./SvgPhanasonic";
+export { SvgPhilips } from "./SvgPhilips";
+export { SvgXiaomi } from "./SvgXiaomi";

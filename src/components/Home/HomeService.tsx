@@ -58,7 +58,6 @@ export default function HomeService() {
           </Styled.HomeServiceItem>
         </Styled.HomeServiceList>
       </Styled.HomeServiceContainer>
-      <Divider />
     </Section>
   );
 }

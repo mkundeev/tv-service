@@ -23,4 +23,5 @@ export const LocaleLink = styled(Link)`
 export const NavigationList = styled.ul`
   display: flex;
   gap: 10px;
+  margin-top: 10px;
 `;

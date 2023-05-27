@@ -11,13 +11,13 @@ export default function Header() {
   return (
     <Styled.Header>
       <Styled.HeaderContainer>
-        <Styled.HeaderContant>
+        <div>
           <Logo />
-          <Phone />
-          <WorkHours />
-          <ChangeLocale />
-        </Styled.HeaderContant>
-        <Navigation />
+          <Navigation />
+        </div>
+        <Phone />
+        <WorkHours />
+        <ChangeLocale />
       </Styled.HeaderContainer>
     </Styled.Header>
   );
