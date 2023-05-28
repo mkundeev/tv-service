@@ -1,6 +1,5 @@
 import { useState } from "react";
 import Section from "../common/styles/Section.styled";
-import Container from "../common/styles/Container.styled";
 import {
   GoogleMap,
   InfoWindow,
@@ -14,6 +13,7 @@ import {
   HomeMapContainer,
   HomeMapItem,
 } from "./styles/HomeMap.styled";
+
 const center = {
   lat: 50.456855,
   lng: 30.436125,
@@ -23,7 +23,7 @@ export default function HomeMap() {
   const [open, isOpen] = useState(false);
   const { isLoaded } = useJsApiLoader({
     id: "google-map-script",
-    googleMapsApiKey: "AIzaSyAkLjWfBn4lLDrga-bk8pe9vIzFGvwWmis",
+    googleMapsApiKey: process.env.GOOGLE_MAP_API as string,
   });
 
   return (

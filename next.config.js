@@ -11,6 +11,9 @@ const nextConfig = {
     // Enables the styled-components SWC transform
     styledComponents: true,
   },
+  env: {
+    GOOGLE_MAP_API: process.env.GOOGLE_MAP_API,
+  },
 };
 
 module.exports = nextConfig;
