@@ -6,6 +6,7 @@ export const SvgPhanasonic = (props: SVGProps<SVGSVGElement>) => (
     viewBox="0 0 504 81"
     {...props}
   >
+    <title>{"Phanasonic"}</title>
     <defs>
       <clipPath id="a" clipPathUnits="userSpaceOnUse">
         <path d="M283.61 700.16h166.16v-25.242H283.61v25.242z" />

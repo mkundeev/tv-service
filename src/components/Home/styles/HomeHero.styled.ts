@@ -4,7 +4,7 @@ import bg from "@/../public/hero.jpg";
 import Container from "@/components/common/styles/Container.styled";
 
 export const HomeHeroSection = styled(Section)`
-  height: 100vh;
+  min-height: calc(100vh - 100px);
   background-image: url(${bg.src});
   background-size: cover;
   background-repeat: no-repeat;

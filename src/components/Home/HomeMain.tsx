@@ -54,7 +54,6 @@ export default function HomeMain() {
           )}
         </Styled.TextBlock>
       </Styled.HomeMainContainer>
-      <Divider />
     </Section>
   );
 }

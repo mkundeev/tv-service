@@ -7,6 +7,7 @@ export const SvgLG = (props: SVGProps<SVGSVGElement>) => (
     viewBox="0 0 176 77"
     {...props}
   >
+    <title>{"LG"}</title>
     <path d="M38.65 77.239c21.328 0 38.65-17.271 38.65-38.611C77.3 17.287 59.978 0 38.65 0 17.289 0 0 17.287 0 38.628c0 21.34 17.289 38.611 38.65 38.611" />
     <path
       fill="#FFF"

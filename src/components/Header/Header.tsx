@@ -9,16 +9,19 @@ import Navigation from "./Navigation";
 
 export default function Header() {
   return (
-    <Styled.Header>
-      <Styled.HeaderContainer>
-        <div>
-          <Logo />
-          <Navigation />
-        </div>
-        <Phone />
-        <WorkHours />
-        <ChangeLocale />
-      </Styled.HeaderContainer>
-    </Styled.Header>
+    <>
+      <Styled.Header>
+        <Styled.HeaderContainer>
+          <div>
+            <Logo />
+            <Navigation />
+          </div>
+          <Phone />
+          <WorkHours />
+          <ChangeLocale />
+        </Styled.HeaderContainer>
+      </Styled.Header>
+      <div style={{ height: "100px" }}></div>
+    </>
   );
 }

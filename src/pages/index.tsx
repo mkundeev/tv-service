@@ -5,6 +5,7 @@ import HomeHero from "@/components/Home/HomeHero";
 import HomeService from "@/components/Home/HomeService";
 import HomeBrands from "@/components/Home/HomeBrands";
 import HomeMap from "@/components/Home/HomeMap";
+import Divider from "@/components/common/Divider";
 
 export default function Home() {
   return (
@@ -12,9 +13,10 @@ export default function Home() {
       <Head>
         <title>Next project</title>
       </Head>
-      <div style={{ height: "100px" }}></div>
+
       <HomeHero />
       <HomeMain />
+      <Divider />
       <HomeService />
       <HomeBrands />
       <HomeMap />
