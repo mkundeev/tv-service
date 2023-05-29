@@ -8,10 +8,10 @@ export const Text = styled.p`
 export const HomeMapContainer = styled(Container)`
   display: flex;
   gap: 40px;
+  min-height: calc(100vh - 200px);
 `;
 export const HomeMapItem = styled.div`
   flex: 1 1 0px;
-  aspect-ratio: 1/1;
 `;
 
 export const HomeMapContacts = styled(HomeMapItem)`
@@ -22,7 +22,7 @@ export const HomeMapContacts = styled(HomeMapItem)`
   gap: 20px;
   a,
   p {
-    font-size: 24px;
+    font-size: 20px;
   }
 `;
 

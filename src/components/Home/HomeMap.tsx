@@ -23,7 +23,7 @@ export default function HomeMap() {
   });
 
   return (
-    <Section>
+    <Section $screenHeight={true}>
       <Styled.HomeMapContainer>
         <Styled.HomeMapContacts>
           <Styled.Title> Контакти</Styled.Title>
