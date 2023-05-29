@@ -17,6 +17,7 @@ export const LocaleLink = styled(Link)`
   color: ${COLORS.white};
   :hover {
     background-color: ${COLORS.primary};
+    color: ${COLORS.white};
   }
 `;
 

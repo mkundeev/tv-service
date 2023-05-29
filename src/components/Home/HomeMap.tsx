@@ -6,13 +6,9 @@ import {
   Marker,
   useJsApiLoader,
 } from "@react-google-maps/api";
-import {
-  Text,
-  mapStyles,
-  mapContainer,
-  HomeMapContainer,
-  HomeMapItem,
-} from "./styles/HomeMap.styled";
+import * as Styled from "./styles/HomeMap.styled";
+import Phone from "../Header/Phone";
+import WorkHours from "../Header/WorkHours";
 
 const center = {
   lat: 50.456855,
@@ -28,27 +24,33 @@ export default function HomeMap() {
 
   return (
     <Section>
-      <HomeMapContainer>
-        <HomeMapItem></HomeMapItem>
-        <HomeMapItem>
+      <Styled.HomeMapContainer>
+        <Styled.HomeMapContacts>
+          <Styled.Title> Контакти</Styled.Title>
+          <p>Проспект Перемоги 60, м.Київ</p>
+          <a href="mailto: rizotv@gmail.com">rizotv@gmail.com</a>
+          <WorkHours iconSize={40} />
+          <Phone iconSize={40} />
+        </Styled.HomeMapContacts>
+        <Styled.HomeMapItem>
           {isLoaded && (
             <GoogleMap
-              mapContainerStyle={mapContainer}
+              mapContainerStyle={Styled.mapContainer}
               center={center}
               zoom={14}
-              options={{ styles: mapStyles }}
+              options={{ styles: Styled.mapStyles }}
             >
               <Marker position={center} onClick={() => isOpen(true)}>
                 {open && isLoaded ? (
                   <InfoWindow onCloseClick={() => isOpen(false)}>
-                    <Text>test</Text>
+                    <Styled.Text>test</Styled.Text>
                   </InfoWindow>
                 ) : null}
               </Marker>
             </GoogleMap>
           )}
-        </HomeMapItem>
-      </HomeMapContainer>
+        </Styled.HomeMapItem>
+      </Styled.HomeMapContainer>
     </Section>
   );
 }

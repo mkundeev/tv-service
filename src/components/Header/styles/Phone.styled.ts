@@ -15,8 +15,4 @@ export const PhoneList = styled.ul`
   grid-row-gap: 5px;
 `;
 
-export const PhoneItem = styled.li`
-  :hover {
-    color: ${COLORS.primary};
-  }
-`;
+

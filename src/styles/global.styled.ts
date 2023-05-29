@@ -36,6 +36,9 @@ export const GlobalStyles = createGlobalStyle`
   color: inherit;
   text-decoration: none;
   font-size: 14px;
+  :hover {
+    color: ${COLORS.primary};
+  }
 }
 p{
     font-size: 14px;

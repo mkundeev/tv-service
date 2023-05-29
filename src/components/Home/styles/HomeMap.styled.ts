@@ -13,6 +13,22 @@ export const HomeMapItem = styled.div`
   flex: 1 1 0px;
   aspect-ratio: 1/1;
 `;
+
+export const HomeMapContacts = styled(HomeMapItem)`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  a,
+  p {
+    font-size: 24px;
+  }
+`;
+
+export const Title = styled.h2`
+  font-size: 40px;
+`;
 export const mapStyles = [
   { elementType: "geometry", stylers: [{ color: "#242f3e" }] },
   { elementType: "labels.text.stroke", stylers: [{ color: "#242f3e" }] },
