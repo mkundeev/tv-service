@@ -5,7 +5,6 @@ import bg from "../../../../public/bcg-brands.jpg";
 import { SIZE } from "@/theme";
 
 export const HomeBrandsSection = styled(Section)`
-  min-height: calc(100vh - 100px);
   background-image: url(${bg.src});
   background-size: cover;
   background-repeat: no-repeat;
@@ -13,7 +12,7 @@ export const HomeBrandsSection = styled(Section)`
 `;
 
 export const HomeBrandsContainer = styled(Container)`
-  height: 100%;
+  min-height: calc(100vh - 100px);
   display: flex;
   justify-content: center;
   align-items: center;
