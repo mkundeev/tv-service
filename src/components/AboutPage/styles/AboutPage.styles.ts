@@ -2,6 +2,7 @@ import styled from "styled-components";
 import Section from "@/components/common/styles/Section.styled";
 import Container from "@/components/common/styles/Container.styled";
 import bg from "@/../public/hero.jpg";
+import { SIZE } from "@/theme";
 
 export const AboutSection = styled(Section)`
   background-image: url(${bg.src});
@@ -19,7 +20,7 @@ export const AboutContainer = styled(Container)`
 `;
 
 export const Title = styled.h2`
-  font-size: 40px;
+  font-size: ${SIZE.xl};
   text-align: center;
 `;
 
@@ -34,6 +35,6 @@ export const AboutItem = styled.li`
     margin-bottom: 20px;
   }
   p {
-    font-size: 20px;
+    font-size: ${SIZE.m};
   }
 `;

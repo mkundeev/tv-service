@@ -2,6 +2,7 @@ import styled from "styled-components";
 import Section from "@/components/common/styles/Section.styled";
 import bg from "@/../public/hero.jpg";
 import Container from "@/components/common/styles/Container.styled";
+import { SIZE } from "@/theme";
 
 export const HomeHeroSection = styled(Section)`
   min-height: calc(100vh - 100px);
@@ -17,7 +18,7 @@ export const HomeHeroContainer = styled(Container)`
 `;
 
 export const Title = styled.h1`
-  font-size: 40px;
+  font-size: ${SIZE.xl};
   text-align: center;
 `;
 
@@ -32,6 +33,6 @@ export const TextContainer = styled.div`
 
   p,
   a {
-    font-size: 20px;
+    font-size: ${SIZE.m};
   }
 `;

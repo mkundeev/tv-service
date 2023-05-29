@@ -1,13 +1,13 @@
 import styled from "styled-components";
 import Section from "@/components/common/styles/Section.styled";
-import { COLORS } from "@/theme";
+import { COLORS,SIZE } from "@/theme";
 
 export const BrandSection = styled(Section)`
   min-height: calc(100vh - 200px);
 `;
 
 export const Title = styled.h1`
-  font-size: 40px;
+  font-size: ${SIZE.xl};
   text-align: center;
   margin-bottom: 20px;
 `;

@@ -1,5 +1,6 @@
 import Container from "@/components/common/styles/Container.styled";
 import styled from "styled-components";
+import { SIZE } from "@/theme";
 
 export const ServicesContainer = styled(Container)`
   display: flex;
@@ -22,7 +23,7 @@ export const TextBlock = styled.div`
   padding-right: ${({ position }: IProps) =>
     position === "left" ? "20px" : "0"};
   h2 {
-    font-size: 40px;
+    font-size: ${SIZE.xl};
     text-align: center;
     margin-bottom: 20px;
   }

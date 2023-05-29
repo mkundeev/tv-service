@@ -13,7 +13,12 @@ export const FooterContainer = styled(Container)`
   height: 100%;
 `;
 
-export const Email = styled.a`
-  display: block;
+export const EmailWrap = styled.div`
   margin-top: 5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  span {
+    font-size: 14px;
+  }
 `;

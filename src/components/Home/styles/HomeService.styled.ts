@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Container from "@/components/common/styles/Container.styled";
+import { SIZE } from "@/theme";
 
 export const HomeServiceContainer = styled(Container)`
   padding: 60px 10px;
@@ -19,7 +20,7 @@ export const HomeServiceItem = styled.li`
   }
   h3 {
     text-align: center;
-    font-size: 20px;
+    font-size: ${SIZE.m};
   }
   p {
     text-align: center;

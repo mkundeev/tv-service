@@ -1,4 +1,4 @@
-import { COLORS } from "@/theme";
+import { COLORS, SIZE } from "@/theme";
 import styled from "styled-components";
 import Container from "@/components/common/styles/Container.styled";
 
@@ -22,12 +22,12 @@ export const HomeMapContacts = styled(HomeMapItem)`
   gap: 20px;
   a,
   p {
-    font-size: 20px;
+    font-size: ${SIZE.m};
   }
 `;
 
 export const Title = styled.h2`
-  font-size: 40px;
+  font-size: ${SIZE.xl};
 `;
 export const mapStyles = [
   { elementType: "geometry", stylers: [{ color: "#242f3e" }] },

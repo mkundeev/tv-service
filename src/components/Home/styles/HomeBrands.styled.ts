@@ -2,9 +2,10 @@ import styled from "styled-components";
 import Container from "@/components/common/styles/Container.styled";
 import Section from "@/components/common/styles/Section.styled";
 import bg from "../../../../public/bcg-brands.jpg";
+import { SIZE } from "@/theme";
 
 export const HomeBrandsSection = styled(Section)`
-  height: 700px;
+  min-height: calc(100vh - 100px);
   background-image: url(${bg.src});
   background-size: cover;
   background-repeat: no-repeat;
@@ -19,7 +20,7 @@ export const HomeBrandsContainer = styled(Container)`
 `;
 
 export const Title = styled.h2`
-  font-size: 40px;
+  font-size: ${SIZE.xl};
   text-align: center;
 `;
 export const BrandsList = styled.ul`

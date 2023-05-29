@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { SIZE } from "@/theme";
 
 export const LogoWrap = styled.div`
   width: fit-content;
@@ -7,7 +8,7 @@ export const LogoWrap = styled.div`
 `;
 
 export const LogoText = styled.p`
-  font-size: 24px;
+  font-size: ${SIZE.l};
   margin-left: 10px;
   font-weight: 700;
 `;

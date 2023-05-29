@@ -15,9 +15,10 @@ export default function Footer() {
               ? "Адреса: Проспект Перемоги 60, м.Київ"
               : "Адрес: Проспект Победы 60, г.Киев"}
           </p>
-          <Styled.Email href="mailto: rizotv@gmail.com">
-            E-mail: rizotv@gmail.com
-          </Styled.Email>
+          <Styled.EmailWrap>
+            <span>E-mail:</span>
+            <a href="mailto: rizotv@gmail.com">rizotv@gmail.com</a>
+          </Styled.EmailWrap>
         </div>
         <Phone />
         <WorkHours />

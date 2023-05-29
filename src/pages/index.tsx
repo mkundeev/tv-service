@@ -13,7 +13,6 @@ export default function Home() {
       <Head>
         <title>Next project</title>
       </Head>
-
       <HomeHero />
       <HomeMain />
       <Divider />
