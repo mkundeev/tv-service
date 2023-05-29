@@ -1,9 +1,9 @@
-import HomeMap from "@/components/Home/HomeMap";
+import Map from "@/components/Map/Map";
 import { Layout } from "@/components/common/Layout";
 export default function Contacts() {
   return (
     <Layout>
-      <HomeMap />
+      <Map />
     </Layout>
   );
 }

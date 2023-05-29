@@ -4,7 +4,7 @@ import HomeMain from "@/components/Home/HomeMain";
 import HomeHero from "@/components/Home/HomeHero";
 import HomeService from "@/components/Home/HomeService";
 import HomeBrands from "@/components/Home/HomeBrands";
-import HomeMap from "@/components/Home/HomeMap";
+import Map from "@/components/Map/Map";
 import Divider from "@/components/common/Divider";
 
 export default function Home() {
@@ -19,7 +19,7 @@ export default function Home() {
       <Divider />
       <HomeService />
       <HomeBrands />
-      <HomeMap />
+      <Map />
     </Layout>
   );
 }

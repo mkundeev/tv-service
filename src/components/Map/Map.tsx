@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useRouter } from "next/router";
 import Section from "../common/styles/Section.styled";
 import {
   GoogleMap,
@@ -6,7 +7,7 @@ import {
   Marker,
   useJsApiLoader,
 } from "@react-google-maps/api";
-import * as Styled from "./styles/HomeMap.styled";
+import * as Styled from "./styles/Map.styled";
 import Phone from "../Header/Phone";
 import WorkHours from "../Header/WorkHours";
 
@@ -17,6 +18,7 @@ const center = {
 
 export default function HomeMap() {
   const [open, isOpen] = useState(false);
+  const { locale } = useRouter();
   const { isLoaded } = useJsApiLoader({
     id: "google-map-script",
     googleMapsApiKey: process.env.GOOGLE_MAP_API as string,
@@ -26,8 +28,14 @@ export default function HomeMap() {
     <Section $screenHeight={true}>
       <Styled.HomeMapContainer>
         <Styled.HomeMapContacts>
-          <Styled.Title> Контакти</Styled.Title>
-          <p>Проспект Перемоги 60, м.Київ</p>
+          <Styled.Title>
+            {locale === "ua" ? "Контакти" : "Контакты"}
+          </Styled.Title>
+          <p>
+            {locale === "ua"
+              ? "Проспект Перемоги 60, м.Київ"
+              : "Проспект Победы 60, г.Киев"}
+          </p>
           <a href="mailto: rizotv@gmail.com">rizotv@gmail.com</a>
           <WorkHours iconSize={40} />
           <Phone iconSize={40} />
