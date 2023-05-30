@@ -17,7 +17,7 @@ export const HomeMapItem = styled.div`
   width: 100%;
   height: calc(50vh - 110px);
   @media ${MEDIA.laptop} {
-    height: calc(100vh - 220px);
+    height: calc(100vh - 240px);
   }
 `;
 
