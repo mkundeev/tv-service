@@ -20,14 +20,14 @@ export default function HomeService() {
                   : "Ремонт телевизоров в Киеве"
               }
             />
-            <div>
+            <Styled.TextBlock>
               <h3>Ремонт</h3>
               <p>
                 {locale === "ua"
                   ? "Спеціалізуємося на ремонті кінескопних, рідкокристалічних та плазмових телевізорів різних виробників та моделей"
                   : "Специализируемся на ремонте кинескопных, жидкокристаллических и плазменных телевизоров разных производителей и моделей"}
               </p>
-            </div>
+            </Styled.TextBlock>
           </Styled.HomeServiceItem>
           <Styled.HomeServiceItem>
             <Styled.ImageService
@@ -38,14 +38,14 @@ export default function HomeService() {
                   : "Диагностика телевизоров в Киеве"
               }
             />
-            <div>
+            <Styled.TextBlock>
               <h3>{locale === "ua" ? "Діагностика" : "Диагностика"}</h3>
               <p>
                 {locale === "ua"
                   ? "Наш спеціаліст проведе діагностику несправностей вашого телевізора для визначення причин виходу з ладу"
                   : "Наш специалист проведет диагностику неисправностей вашего телевизора для определения причин выхода из строя."}
               </p>
-            </div>
+            </Styled.TextBlock>
           </Styled.HomeServiceItem>
           <Styled.HomeServiceItem>
             <Styled.ImageService
@@ -56,14 +56,14 @@ export default function HomeService() {
                   : "Настройка телевизоров в Киеве"
               }
             />
-            <div>
+            <Styled.TextBlock>
               <h3>{locale === "ua" ? "Налаштування" : "Настройка"}</h3>
               <p>
                 {locale === "ua"
                   ? "У деяких випадках несправність телевізора можна усунути внесенням правильних налаштувань і зміною внутрішніх опцій"
                   : "В некоторых случаях неисправность телевизора можно устранить внесением правильных настроек и изменением внутренних опций."}
               </p>
-            </div>
+            </Styled.TextBlock>
           </Styled.HomeServiceItem>
         </Styled.HomeServiceList>
       </Styled.HomeServiceContainer>

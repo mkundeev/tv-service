@@ -8,6 +8,7 @@ import { MEDIA } from "@/theme";
 export default function Footer() {
   const { locale } = useRouter();
   const isTablet = useMedia(MEDIA.tablet);
+  const isLaptop = useMedia(MEDIA.laptop);
   return (
     <Styled.FooterSection>
       <Styled.FooterContainer>
@@ -23,12 +24,12 @@ export default function Footer() {
             <a href="mailto: rizotv@gmail.com">rizotv@gmail.com</a>
           </Styled.EmailWrap>
         </div>
-        {isTablet ? (
+        {isTablet && (
           <>
             <Phone />
-            <WorkHours />
+            {isLaptop && <WorkHours />}
           </>
-        ) : null}
+        )}
       </Styled.FooterContainer>
     </Styled.FooterSection>
   );

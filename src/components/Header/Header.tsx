@@ -23,10 +23,12 @@ export default function Header() {
         ) : (
           <Styled.HeaderContainer>
             <div>
-              <Logo />
+              <Styled.MobileWrap>
+                <Logo />
+                <Phone />
+              </Styled.MobileWrap>
               <Navigation />
             </div>
-            <Phone />
             <WorkHours />
             <ChangeLocale />
           </Styled.HeaderContainer>

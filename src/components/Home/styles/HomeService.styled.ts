@@ -16,9 +16,6 @@ export const HomeServiceItem = styled.li`
   /* width: 370px; */
   display: flex;
   box-shadow: 0px 0px 6px 0px rgba(255, 255, 255, 0.5);
-  div {
-    padding: 10px;
-  }
   h3 {
     text-align: center;
     font-size: ${SIZE.m};
@@ -35,4 +32,12 @@ export const HomeServiceItem = styled.li`
 
 export const ImageService = styled.img`
   width: 50%;
+`;
+
+export const TextBlock = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
 `;

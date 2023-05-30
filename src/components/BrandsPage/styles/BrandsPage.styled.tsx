@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import Section from "@/components/common/styles/Section.styled";
-import { COLORS, SIZE } from "@/theme";
+import { COLORS, SIZE, MEDIA } from "@/theme";
 
 export const BrandSection = styled(Section)`
   min-height: calc(100vh - 200px);
@@ -16,6 +16,9 @@ export const BrandList = styled.ul`
   padding: 0 20px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  @media ${MEDIA.tablet} {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
 `;
 
 export const BrandItem = styled.li`
