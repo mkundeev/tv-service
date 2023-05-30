@@ -16,6 +16,7 @@ export const HomeBrandsContainer = styled(Container)`
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  gap: 10px;
   align-items: center;
 `;
 

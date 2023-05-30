@@ -16,8 +16,6 @@ export const HomeMapContainer = styled(Container)`
 `;
 export const HomeMapItem = styled.div`
   flex: 1 1 0px;
-  height: 100%;
-  width: 100%;
 `;
 
 export const HomeMapContacts = styled(HomeMapItem)`
