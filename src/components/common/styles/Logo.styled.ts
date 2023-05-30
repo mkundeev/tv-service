@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { FaDesktop } from "react-icons/fa";
 import { SIZE, MEDIA } from "@/theme";
 
 export const LogoWrap = styled.div`
@@ -14,5 +15,14 @@ export const LogoText = styled.p`
 
   @media ${MEDIA.tablet} {
     font-size: ${SIZE.l};
+  }
+`;
+
+export const LogoIcon = styled(FaDesktop)`
+  width: 24px;
+  height: 24px;
+  @media ${MEDIA.tablet} {
+    width: 32px;
+    height: 32px;
   }
 `;

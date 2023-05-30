@@ -1,16 +1,14 @@
 import { COLORS } from "@/theme";
 import React from "react";
-import { HiPhone } from "react-icons/hi";
 import * as Styled from "./styles/Phone.styled";
 
 type IProps = {
-  iconSize?: number;
   $mobHeader?: boolean;
 };
-export default function Phone({ iconSize, $mobHeader }: IProps) {
+export default function Phone({ $mobHeader }: IProps) {
   return (
     <Styled.PhoneContainer>
-      <HiPhone color={COLORS.primary} size={iconSize || 24} />
+      <Styled.PhoneIcon color={COLORS.primary} />
       <Styled.PhoneList $mobHeader={$mobHeader}>
         <li>
           <a href="tel:+380442337508">+38 (044) 233-75-08</a>

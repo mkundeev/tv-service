@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { useRouter } from "next/router";
-import { useMedia } from "react-use";
 import Section from "../common/styles/Section.styled";
 import {
   GoogleMap,
@@ -11,7 +10,6 @@ import {
 import * as Styled from "./styles/Map.styled";
 import Phone from "../Header/Phone";
 import WorkHours from "../Header/WorkHours";
-import { MEDIA } from "@/theme";
 
 const center = {
   lat: 50.456855,
@@ -25,7 +23,6 @@ export default function HomeMap() {
     id: "google-map-script",
     googleMapsApiKey: process.env.GOOGLE_MAP_API as string,
   });
-  const isLaptop = useMedia(MEDIA.laptop);
 
   return (
     <Section $screenHeight={true}>
@@ -40,8 +37,8 @@ export default function HomeMap() {
               : "Проспект Победы 60, г.Киев"}
           </p>
           <a href="mailto: rizotv@gmail.com">rizotv@gmail.com</a>
-          <WorkHours iconSize={isLaptop ? 40 : undefined} />
-          <Phone iconSize={isLaptop ? 40 : undefined} />
+          <WorkHours />
+          <Phone />
         </Styled.HomeMapContacts>
         <Styled.HomeMapItem>
           {isLoaded && (
