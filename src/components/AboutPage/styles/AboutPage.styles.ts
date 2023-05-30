@@ -22,11 +22,9 @@ export const AboutContainer = styled(Container)`
 export const Title = styled.h2`
   font-size: ${SIZE.xl};
   text-align: center;
+  margin-bottom: 20px;
 `;
 
-export const AboutList = styled.ul`
-  margin-top: 20px;
-`;
 export const AboutItem = styled.li`
   display: flex;
   gap: 20px;
