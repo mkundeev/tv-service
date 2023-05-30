@@ -1,16 +1,20 @@
 import styled from "styled-components";
 import Container from "@/components/common/styles/Container.styled";
 import { COLORS, MEDIA } from "@/theme";
+import { IDisplayProps } from "@/types/types";
 
 const HIGHT = `100px`;
 
 export const HeaderContainer = styled(Container)`
   height: 100%;
-  display: flex;
+  display: ${({ display }: IDisplayProps) =>
+    display === "mobile" ? "flex" : "none"};
   min-width: 382px;
   flex-direction: column;
   justify-content: space-around;
   @media ${MEDIA.tablet} {
+    display: ${({ display }: IDisplayProps) =>
+      display === "tabl" ? "flex" : "none"};
     flex-direction: row;
     justify-content: space-between;
   }
