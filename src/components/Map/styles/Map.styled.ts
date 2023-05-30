@@ -118,4 +118,4 @@ export const mapStyles = [
     stylers: [{ color: "#17263c" }],
   },
 ];
-export const mapContainer = { width: "100%", height: "100%" };
+export const mapContainer = { width: "400px", height: "400px" };

@@ -51,7 +51,11 @@ export default function HomeMap() {
               <Marker position={center} onClick={() => isOpen(true)}>
                 {open && isLoaded ? (
                   <InfoWindow onCloseClick={() => isOpen(false)}>
-                    <Styled.Text>test</Styled.Text>
+                    <Styled.Text>
+                      {locale === "ua"
+                        ? "Проспект Перемоги 60, м.Київ"
+                        : "Проспект Победы 60, г.Киев"}
+                    </Styled.Text>
                   </InfoWindow>
                 ) : null}
               </Marker>
