@@ -28,6 +28,10 @@ export const BrandItem = styled.li`
   aspect-ratio: 1/1;
   display: flex;
   align-items: center;
+  svg {
+    height: 100%;
+    width: 100%;
+  }
   @media ${MEDIA.tablet} {
     width: calc(100% / 5);
   }
