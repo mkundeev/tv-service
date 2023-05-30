@@ -17,10 +17,8 @@ export default function Header() {
           <Styled.HeaderContainer>
             <Styled.MobileWrap>
               <Logo />
-              {/* <ChangeLocale /> */}
               <Phone $mobHeader={true} />
             </Styled.MobileWrap>
-            {/* <Phone $mobHeader={true} /> */}
             <Styled.MobileWrap>
               <Navigation />
               <ChangeLocale />
