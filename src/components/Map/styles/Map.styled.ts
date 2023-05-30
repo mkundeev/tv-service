@@ -8,25 +8,24 @@ export const Text = styled.p`
 export const HomeMapContainer = styled(Container)`
   display: flex;
   flex-direction: column;
+  gap: 10px;
   @media ${MEDIA.laptop} {
     flex-direction: row;
-    gap: 20px;
   }
 `;
 export const HomeMapItem = styled.div`
   width: 100%;
-  height: calc(50vh - 120px);
+  height: calc(50vh - 110px);
   @media ${MEDIA.laptop} {
-    height: calc(100vh - 240px);
+    height: calc(100vh - 220px);
   }
 `;
 
 export const HomeMapContacts = styled(HomeMapItem)`
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 20px;
   @media ${MEDIA.laptop} {
     a,
     p {
