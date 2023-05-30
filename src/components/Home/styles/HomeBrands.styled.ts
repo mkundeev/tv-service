@@ -15,7 +15,7 @@ export const HomeBrandsContainer = styled(Container)`
   min-height: calc(100vh - 100px);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 `;
 
@@ -27,7 +27,6 @@ export const Title = styled.h2`
   }
 `;
 export const BrandsList = styled.ul`
-  margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
