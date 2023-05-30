@@ -7,7 +7,8 @@ export const Text = styled.p`
 `;
 export const HomeMapContainer = styled(Container)`
   display: flex;
-  gap: 40px;
+  flex-direction: column;
+  gap: 20px;
   min-height: calc(100vh - 200px);
 `;
 export const HomeMapItem = styled.div`
@@ -20,14 +21,14 @@ export const HomeMapContacts = styled(HomeMapItem)`
   justify-content: center;
   align-items: center;
   gap: 20px;
-  a,
+  /* a,
   p {
     font-size: ${SIZE.m};
-  }
+  } */
 `;
 
 export const Title = styled.h2`
-  font-size: ${SIZE.xl};
+  font-size: ${SIZE.l};
 `;
 export const mapStyles = [
   { elementType: "geometry", stylers: [{ color: "#242f3e" }] },

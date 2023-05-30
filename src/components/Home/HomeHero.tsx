@@ -1,9 +1,12 @@
 import { useRouter } from "next/router";
+import { useMedia } from "react-use";
 import Phone from "../Header/Phone";
 import * as Styled from "./styles/HomeHero.styled";
 import AboutList from "../AboutPage/AboutList";
+import { MEDIA } from "@/theme";
 export default function HomeHero() {
   const { locale } = useRouter();
+  const isTablet = useMedia(MEDIA.tablet);
   return (
     <Styled.HomeHeroSection>
       <Styled.HomeHeroContainer>
@@ -19,7 +22,7 @@ export default function HomeHero() {
         </p>
         <Styled.MasterCall>
           <p>{locale === "ua" ? "Виклик майстра:" : "Вызов мастера:"}</p>
-          <Phone iconSize={40} />
+          <Phone />
         </Styled.MasterCall>
         <AboutList />
       </Styled.HomeHeroContainer>

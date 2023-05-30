@@ -14,18 +14,19 @@ export const HomeBrandsSection = styled(Section)`
 export const HomeBrandsContainer = styled(Container)`
   min-height: calc(100vh - 100px);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 `;
 
 export const Title = styled.h2`
-  font-size: ${SIZE.xl};
+  font-size: ${SIZE.l};
   text-align: center;
 `;
 export const BrandsList = styled.ul`
-  margin-top: 100px;
+  margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 40px;
+  gap: 20px;
 `;

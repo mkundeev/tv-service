@@ -12,14 +12,13 @@ export default function HomeService() {
       <Styled.HomeServiceContainer>
         <Styled.HomeServiceList>
           <Styled.HomeServiceItem>
-            <img
+            <Styled.ImageService
               src={service1.src}
               alt={
                 locale === "ua"
                   ? "Ремонт телевізорів в Києві"
                   : "Ремонт телевизоров в Киеве"
               }
-              width="370px"
             />
             <div>
               <h3>Ремонт</h3>
@@ -31,14 +30,13 @@ export default function HomeService() {
             </div>
           </Styled.HomeServiceItem>
           <Styled.HomeServiceItem>
-            <img
+            <Styled.ImageService
               src={service3.src}
               alt={
                 locale === "ua"
                   ? "Діагностика телевізорів в Києві"
                   : "Диагностика телевизоров в Киеве"
               }
-              width="370px"
             />
             <div>
               <h3>{locale === "ua" ? "Діагностика" : "Диагностика"}</h3>
@@ -50,14 +48,13 @@ export default function HomeService() {
             </div>
           </Styled.HomeServiceItem>
           <Styled.HomeServiceItem>
-            <img
+            <Styled.ImageService
               src={service2.src}
               alt={
                 locale === "ua"
                   ? "Налаштування телевізорів в Києві"
                   : "Настройка телевизоров в Киеве"
               }
-              width="370px"
             />
             <div>
               <h3>{locale === "ua" ? "Налаштування" : "Настройка"}</h3>

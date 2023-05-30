@@ -8,20 +8,18 @@ export default function HomeBrands() {
   return (
     <Styled.HomeBrandsSection>
       <Styled.HomeBrandsContainer>
-        <div>
-          <Styled.Title>
-            {locale === "ua"
-              ? "Ми ремонтуємо телевізори всіх марок"
-              : "Мы ремонтируем телевизоры всех марок"}
-          </Styled.Title>
-          <Styled.BrandsList>
-            {Object.values(Icons).map((Element, index) => (
-              <li key={index}>
-                <Element fill={COLORS.primary} height={50} />
-              </li>
-            ))}
-          </Styled.BrandsList>
-        </div>
+        <Styled.Title>
+          {locale === "ua"
+            ? "Ми ремонтуємо телевізори всіх марок"
+            : "Мы ремонтируем телевизоры всех марок"}
+        </Styled.Title>
+        <Styled.BrandsList>
+          {Object.values(Icons).map((Element, index) => (
+            <li key={index}>
+              <Element fill={COLORS.primary} height={30} />
+            </li>
+          ))}
+        </Styled.BrandsList>
       </Styled.HomeBrandsContainer>
     </Styled.HomeBrandsSection>
   );

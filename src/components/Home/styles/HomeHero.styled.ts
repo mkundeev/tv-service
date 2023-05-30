@@ -19,19 +19,20 @@ export const HomeHeroContainer = styled(Container)`
   align-items: center;
   flex-direction: column;
   gap: 20px;
-  p,
+  /* p,
   a {
     font-size: ${SIZE.m};
-  }
+  } */
 `;
 
 export const Title = styled.h1`
-  font-size: ${SIZE.xl};
+  font-size: ${SIZE.l};
   text-align: center;
 `;
 
 export const MasterCall = styled.div`
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
 `;

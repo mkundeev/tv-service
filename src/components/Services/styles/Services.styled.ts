@@ -3,15 +3,15 @@ import styled from "styled-components";
 import { SIZE } from "@/theme";
 
 export const ServicesContainer = styled(Container)`
-  display: flex;
+  /* display: flex;
 
   > div {
     flex: 1 1 0px;
-  }
+  } */
 `;
 
 type IProps = {
-  position: "right" | "left";
+  position?: "right" | "left";
 };
 export const TextBlock = styled.div`
   display: flex;
@@ -23,9 +23,9 @@ export const TextBlock = styled.div`
   padding-right: ${({ position }: IProps) =>
     position === "left" ? "20px" : "0"};
   h2 {
-    font-size: ${SIZE.xl};
+    font-size: ${SIZE.l};
     text-align: center;
-    margin-bottom: 20px;
+    margin: 10px 0;
   }
   p {
     line-height: 1.5;

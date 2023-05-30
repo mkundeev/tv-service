@@ -37,8 +37,8 @@ export default function HomeMap() {
               : "Проспект Победы 60, г.Киев"}
           </p>
           <a href="mailto: rizotv@gmail.com">rizotv@gmail.com</a>
-          <WorkHours iconSize={40} />
-          <Phone iconSize={40} />
+          <WorkHours />
+          <Phone />
         </Styled.HomeMapContacts>
         <Styled.HomeMapItem>
           {isLoaded && (

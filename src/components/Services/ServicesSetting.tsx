@@ -8,7 +8,10 @@ export default function ServicesSetting() {
   return (
     <Section>
       <Styled.ServicesContainer>
-        <Styled.TextBlock position="left">
+        <Styled.TextBlock>
+          <div>
+            <img src={service.src} />
+          </div>
           <h2>{locale === "ua" ? "Налаштування" : "Настройка"}</h2>
           <p>
             {locale === "ua"
@@ -21,9 +24,6 @@ export default function ServicesSetting() {
               : "Опытные специалисты знают, как настроить телевизионные каналы, как выставить качественное изображение и звук, как настроить интернет на телевизоре, подключить его к антенне или через приставку. Предлагаем вызвать мастера настроить телевизор из нашей мастерской."}
           </p>
         </Styled.TextBlock>
-        <div>
-          <img src={service.src} />
-        </div>
       </Styled.ServicesContainer>
     </Section>
   );

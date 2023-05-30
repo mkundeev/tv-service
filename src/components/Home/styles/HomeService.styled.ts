@@ -8,12 +8,13 @@ export const HomeServiceContainer = styled(Container)`
 
 export const HomeServiceList = styled.ul`
   display: flex;
+  flex-direction: column;
   gap: 45px;
 `;
 
 export const HomeServiceItem = styled.li`
-  width: 370px;
-
+  /* width: 370px; */
+  display: flex;
   box-shadow: 0px 0px 6px 0px rgba(255, 255, 255, 0.5);
   div {
     padding: 10px;
@@ -24,8 +25,14 @@ export const HomeServiceItem = styled.li`
   }
   p {
     text-align: center;
-    font-size: 16px;
+
     margin-top: 10px;
-    line-height: 1.3;
   }
+  :nth-child(2n) {
+    flex-direction: row-reverse;
+  }
+`;
+
+export const ImageService = styled.img`
+  width: 50%;
 `;

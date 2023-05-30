@@ -11,7 +11,7 @@ export default function ServicesDiagnostic() {
         <div>
           <img src={service.src} />
         </div>
-        <Styled.TextBlock position="right">
+        <Styled.TextBlock>
           <h2>{locale === "ua" ? "Діагностика" : "Диагностика"}</h2>
           <div>
             <p>

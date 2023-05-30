@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import Section from "@/components/common/styles/Section.styled";
 import Container from "@/components/common/styles/Container.styled";
-import bg from "@/../public/hero.jpg";
+import bg from "@/../public/hero1.jpg";
 import { SIZE } from "@/theme";
 
 export const AboutSection = styled(Section)`
@@ -32,7 +32,7 @@ export const AboutItem = styled.li`
   :not(:last-child) {
     margin-bottom: 20px;
   }
-  p {
+  /* p {
     font-size: ${SIZE.m};
-  }
+  } */
 `;

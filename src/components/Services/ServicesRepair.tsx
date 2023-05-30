@@ -8,7 +8,10 @@ export default function ServicesRepair() {
   return (
     <Section>
       <Styled.ServicesContainer>
-        <Styled.TextBlock position="left">
+        <div>
+          <img src={service.src} />
+        </div>
+        <Styled.TextBlock>
           <h2>Ремонт</h2>
           <p>
             {locale === "ua"
@@ -16,9 +19,6 @@ export default function ServicesRepair() {
               : "Выполняем ремонт всех типов телевизоров – кинескопные, жидкокристаллические (LED, LCD), плазменные. Главным фактором, который влияет на стоимость ремонта телевизора, является характер поломки, выполняемая сложность работы и, конечно же, срок выполнения работы. Мы можем предложить качественный ремонт телевизоров всех брендовых и моделей. Определить более точную цену ремонтных работ наш мастер сможет после проведения диагностики. Хотя в некоторых случаях стоимость ремонта можно определить по телефону."}
           </p>
         </Styled.TextBlock>
-        <div>
-          <img src={service.src} />
-        </div>
       </Styled.ServicesContainer>
     </Section>
   );

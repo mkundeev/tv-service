@@ -1,25 +1,25 @@
 import styled from "styled-components";
 import Section from "@/components/common/styles/Section.styled";
-import { COLORS,SIZE } from "@/theme";
+import { COLORS, SIZE } from "@/theme";
 
 export const BrandSection = styled(Section)`
   min-height: calc(100vh - 200px);
 `;
 
 export const Title = styled.h1`
-  font-size: ${SIZE.xl};
+  font-size: ${SIZE.l};
   text-align: center;
   margin-bottom: 20px;
 `;
 
 export const BrandList = styled.ul`
-  padding: 0 50px;
+  padding: 0 20px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 `;
 
 export const BrandItem = styled.li`
-  padding: 10px;
+  padding: 5px;
   border: 1px solid ${COLORS.white};
   aspect-ratio: 1/1;
   display: flex;
