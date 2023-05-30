@@ -1,6 +1,5 @@
-import { COLORS, SIZE } from "@/theme";
+import { COLORS } from "@/theme";
 import { createGlobalStyle } from "styled-components";
-import { MEDIA } from "@/theme";
 
 export const GlobalStyles = createGlobalStyle`
   *,
@@ -27,6 +26,7 @@ export const GlobalStyles = createGlobalStyle`
     min-height: 100vh;
     scroll-behavior: smooth;
     text-rendering: optimizeSpeed;
+    background-color: ${COLORS.bgc};
   }
 
   ul {
