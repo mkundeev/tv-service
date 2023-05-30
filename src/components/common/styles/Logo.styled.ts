@@ -10,7 +10,7 @@ export const LogoWrap = styled.div`
 
 export const LogoText = styled.p`
   font-size: ${SIZE.m};
-  margin-left: 10px;
+  margin-left: 8px;
   font-weight: 700;
 
   @media ${MEDIA.tablet} {
