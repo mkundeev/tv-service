@@ -17,14 +17,17 @@ export const Title = styled.h1`
 
 export const BrandList = styled.ul`
   padding: 0 20px;
-  display: grid;
+  /* display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   @media ${MEDIA.tablet} {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  }
+  } */
+  display: flex;
+  flex-wrap: wrap;
 `;
 
 export const BrandItem = styled.li`
+  width: calc(100% / 5);
   padding: 5px;
   border: 1px solid ${COLORS.white};
   aspect-ratio: 1/1;
