@@ -1,6 +1,5 @@
 import { useRouter } from "next/router";
 import { useMedia } from "react-use";
-import { useState, useEffect } from "react";
 import * as Styled from "./styles/Footer.styled";
 import Logo from "../common/Logo";
 import Phone from "../Header/Phone";
@@ -8,15 +7,9 @@ import WorkHours from "../Header/WorkHours";
 import { MEDIA } from "@/theme";
 export default function Footer() {
   const { locale } = useRouter();
-  const isTablet = useMedia(MEDIA.tablet);
-  const isLaptop = useMedia(MEDIA.laptop);
-  const [tablet, setTablet] = useState(false);
-  const [laptop, setLaptop] = useState(false);
+  const isTablet = useMedia(MEDIA.tablet, false);
+  const isLaptop = useMedia(MEDIA.laptop, false);
 
-  useEffect(() => {
-    setTablet(isTablet);
-    setLaptop(isLaptop);
-  }, []);
   return (
     <Styled.FooterSection>
       <Styled.FooterContainer>
@@ -32,7 +25,7 @@ export default function Footer() {
             <a href="mailto: rizotv@gmail.com">rizotv@gmail.com</a>
           </Styled.EmailWrap>
         </div>
-        {tablet && (
+        {isTablet && (
           <>
             <Phone />
             {isLaptop && <WorkHours />}

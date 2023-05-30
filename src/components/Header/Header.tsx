@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 import { useMedia } from "react-use";
 import Logo from "../common/Logo";
 import Phone from "./Phone";
@@ -9,20 +8,13 @@ import Navigation from "./Navigation";
 import { MEDIA } from "@/theme";
 
 export default function Header() {
-  const isTablet = useMedia(MEDIA.tablet);
-  const isLaptop = useMedia(MEDIA.laptop);
-  const [tablet, setTablet] = useState(false);
-  const [laptop, setLaptop] = useState(false);
-
-  useEffect(() => {
-    setTablet(isTablet);
-    setLaptop(isLaptop);
-  }, []);
+  const isTablet = useMedia(MEDIA.tablet, false);
+  const isLaptop = useMedia(MEDIA.laptop, false);
 
   return (
     <>
       <Styled.Header>
-        {!tablet ? (
+        {!isTablet ? (
           <Styled.HeaderContainer>
             <Styled.MobileWrap>
               <Logo />
@@ -38,11 +30,11 @@ export default function Header() {
             <div>
               <Styled.MobileWrap>
                 <Logo />
-                {!laptop ? <Phone /> : null}
+                {!isLaptop ? <Phone /> : null}
               </Styled.MobileWrap>
               <Navigation />
             </div>
-            {laptop ? <Phone /> : null}
+            {isLaptop ? <Phone /> : null}
             <WorkHours />
             <ChangeLocale />
           </Styled.HeaderContainer>
