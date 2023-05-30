@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const PhoneContainer = styled.div`
   display: flex;
-  gap: 10px;
+  gap: 8px;
   align-items: center;
   width: fit-content;
 `;
