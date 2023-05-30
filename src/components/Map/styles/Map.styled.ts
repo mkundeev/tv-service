@@ -8,14 +8,17 @@ export const Text = styled.p`
 export const HomeMapContainer = styled(Container)`
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  min-height: calc(100vh - 200px);
   @media ${MEDIA.laptop} {
     flex-direction: row;
+    gap: 20px;
   }
 `;
 export const HomeMapItem = styled.div`
-  flex: 1 1 0px;
+  width: 100%;
+  height: calc(50vh - 120px);
+  @media ${MEDIA.laptop} {
+    height: calc(100vh - 240px);
+  }
 `;
 
 export const HomeMapContacts = styled(HomeMapItem)`
@@ -38,6 +41,9 @@ export const Title = styled.h2`
     font-size: ${SIZE.xl};
   }
 `;
+
+export const mapContainer = { width: "100%", height: "100%" };
+
 export const mapStyles = [
   { elementType: "geometry", stylers: [{ color: "#242f3e" }] },
   { elementType: "labels.text.stroke", stylers: [{ color: "#242f3e" }] },
@@ -118,4 +124,3 @@ export const mapStyles = [
     stylers: [{ color: "#17263c" }],
   },
 ];
-export const mapContainer = { width: "400px", height: "400px" };
