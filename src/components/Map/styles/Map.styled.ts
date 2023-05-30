@@ -24,9 +24,11 @@ export const HomeMapItem = styled.div`
 export const HomeMapContacts = styled(HomeMapItem)`
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   @media ${MEDIA.laptop} {
+    justify-content: center;
+    gap: 20px;
     a,
     p {
       font-size: ${SIZE.m};
