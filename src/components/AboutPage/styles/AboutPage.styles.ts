@@ -20,9 +20,13 @@ export const AboutContainer = styled(Container)`
 `;
 
 export const Title = styled.h2`
-  font-size: ${SIZE.xl};
+  font-size: ${SIZE.l};
   text-align: center;
   margin-bottom: 20px;
+
+  @media ${MEDIA.laptop} {
+    font-size: ${SIZE.xl};
+  }
 `;
 
 export const AboutItem = styled.li`
