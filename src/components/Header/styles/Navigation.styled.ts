@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import Link from "next/link";
-import { COLORS } from "@/theme";
+import { COLORS, MEDIA } from "@/theme";
 
 interface LinkProps {
   $active: boolean;
@@ -23,6 +23,17 @@ export const LocaleLink = styled(Link)`
 
 export const NavigationList = styled.ul`
   display: flex;
-  gap: 10px;
-  margin-top: 10px;
+  justify-content: space-between;
+  a {
+    font-size: 12px;
+    @media ${MEDIA.tablet} {
+      font-size: 14px;
+    }
+  }
+
+  @media ${MEDIA.tablet} {
+    margin-top: 10px;
+    justify-content: left;
+    gap: 10px;
+  }
 `;

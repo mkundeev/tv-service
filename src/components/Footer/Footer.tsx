@@ -14,11 +14,11 @@ export default function Footer() {
       <Styled.FooterContainer>
         <Logo />
         <div>
-          <p>
+          <Styled.Address>
             {locale === "ua"
               ? "Адреса: Проспект Перемоги 60, м.Київ"
               : "Адрес: Проспект Победы 60, г.Киев"}
-          </p>
+          </Styled.Address>
           <Styled.EmailWrap>
             <span>E-mail:</span>
             <a href="mailto: rizotv@gmail.com">rizotv@gmail.com</a>

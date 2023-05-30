@@ -9,6 +9,7 @@ import { MEDIA } from "@/theme";
 
 export default function Header() {
   const isTablet = useMedia(MEDIA.tablet);
+  const isLaptop = useMedia(MEDIA.laptop);
   return (
     <>
       <Styled.Header>
@@ -16,19 +17,25 @@ export default function Header() {
           <Styled.HeaderContainer>
             <Styled.MobileWrap>
               <Logo />
+              {/* <ChangeLocale /> */}
+              <Phone $mobHeader={true} />
+            </Styled.MobileWrap>
+            {/* <Phone $mobHeader={true} /> */}
+            <Styled.MobileWrap>
+              <Navigation />
               <ChangeLocale />
             </Styled.MobileWrap>
-            <Navigation />
           </Styled.HeaderContainer>
         ) : (
           <Styled.HeaderContainer>
             <div>
               <Styled.MobileWrap>
                 <Logo />
-                <Phone />
+                {!isLaptop && <Phone />}
               </Styled.MobileWrap>
               <Navigation />
             </div>
+            {isLaptop && <Phone />}
             <WorkHours />
             <ChangeLocale />
           </Styled.HeaderContainer>

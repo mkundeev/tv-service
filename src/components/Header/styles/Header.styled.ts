@@ -9,7 +9,7 @@ export const HeaderContainer = styled(Container)`
   display: flex;
   min-width: 382px;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   @media ${MEDIA.tablet} {
     flex-direction: row;
     justify-content: space-between;
@@ -32,5 +32,5 @@ export const MobileWrap = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
 `;

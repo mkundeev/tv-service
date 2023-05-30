@@ -5,12 +5,13 @@ import * as Styled from "./styles/Phone.styled";
 
 type IProps = {
   iconSize?: number;
+  $mobHeader?: boolean;
 };
-export default function Phone({ iconSize }: IProps) {
+export default function Phone({ iconSize, $mobHeader }: IProps) {
   return (
     <Styled.PhoneContainer>
       <HiPhone color={COLORS.primary} size={iconSize || 24} />
-      <Styled.PhoneList>
+      <Styled.PhoneList $mobHeader={$mobHeader}>
         <li>
           <a href="tel:+380442337508">+38 (044) 233-75-08</a>
         </li>

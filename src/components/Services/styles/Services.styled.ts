@@ -1,13 +1,15 @@
 import Container from "@/components/common/styles/Container.styled";
 import styled from "styled-components";
-import { SIZE } from "@/theme";
+import { SIZE, MEDIA } from "@/theme";
 
 export const ServicesContainer = styled(Container)`
-  /* display: flex;
+  @media ${MEDIA.laptop} {
+    display: flex;
 
-  > div {
-    flex: 1 1 0px;
-  } */
+    > div {
+      flex: 1 1 0px;
+    }
+  }
 `;
 
 type IProps = {
@@ -18,10 +20,7 @@ export const TextBlock = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-left: ${({ position }: IProps) =>
-    position === "right" ? "20px" : "0"};
-  padding-right: ${({ position }: IProps) =>
-    position === "left" ? "20px" : "0"};
+
   h2 {
     font-size: ${SIZE.l};
     text-align: center;
@@ -34,5 +33,12 @@ export const TextBlock = styled.div`
   ul {
     list-style: disc;
     padding-left: 20px;
+  }
+  @media ${MEDIA.laptop} {
+    padding-left: ${({ position }: IProps) =>
+      position === "right" ? "20px" : "0"};
+    padding-right: ${({ position }: IProps) =>
+      position === "left" ? "20px" : "0"};
+    order: ${({ position }: IProps) => (position === "left" ? -1 : 0)};
   }
 `;

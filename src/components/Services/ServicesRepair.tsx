@@ -11,7 +11,7 @@ export default function ServicesRepair() {
         <div>
           <img src={service.src} />
         </div>
-        <Styled.TextBlock>
+        <Styled.TextBlock position="left">
           <h2>Ремонт</h2>
           <p>
             {locale === "ua"

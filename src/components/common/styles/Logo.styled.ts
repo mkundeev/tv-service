@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { SIZE } from "@/theme";
+import { SIZE, MEDIA } from "@/theme";
 
 export const LogoWrap = styled.div`
   width: fit-content;
@@ -8,7 +8,11 @@ export const LogoWrap = styled.div`
 `;
 
 export const LogoText = styled.p`
-  font-size: ${SIZE.l};
+  font-size: ${SIZE.m};
   margin-left: 10px;
   font-weight: 700;
+
+  @media ${MEDIA.tablet} {
+    font-size: ${SIZE.l};
+  }
 `;

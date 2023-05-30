@@ -1,5 +1,6 @@
-import { COLORS } from "@/theme";
+import { COLORS, SIZE } from "@/theme";
 import { createGlobalStyle } from "styled-components";
+import { MEDIA } from "@/theme";
 
 export const GlobalStyles = createGlobalStyle`
   *,
@@ -31,6 +32,9 @@ export const GlobalStyles = createGlobalStyle`
   ul {
     list-style: none;
   }
+  p{
+    font-size: 14px;
+  }
 
   a {
   color: inherit;
@@ -40,10 +44,6 @@ export const GlobalStyles = createGlobalStyle`
     color: ${COLORS.primary};
   }
 }
-p{
-    font-size: 14px;
-}
-
 
   img {
     max-width: 100%;

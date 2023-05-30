@@ -6,7 +6,7 @@ import AboutList from "../AboutPage/AboutList";
 import { MEDIA } from "@/theme";
 export default function HomeHero() {
   const { locale } = useRouter();
-  const isTablet = useMedia(MEDIA.tablet);
+  const isLaptop = useMedia(MEDIA.laptop);
   return (
     <Styled.HomeHeroSection>
       <Styled.HomeHeroContainer>
@@ -22,7 +22,7 @@ export default function HomeHero() {
         </p>
         <Styled.MasterCall>
           <p>{locale === "ua" ? "Виклик майстра:" : "Вызов мастера:"}</p>
-          <Phone />
+          <Phone iconSize={isLaptop ? 40 : undefined} />
         </Styled.MasterCall>
         <AboutList />
       </Styled.HomeHeroContainer>

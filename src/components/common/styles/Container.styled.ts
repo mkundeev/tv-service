@@ -11,6 +11,7 @@ const Container = styled.div`
   }
   @media ${MEDIA.laptop} {
     max-width: ${BREAK_POINTS.laptop};
+    padding: 20px;
   }
 `;
 export default Container;

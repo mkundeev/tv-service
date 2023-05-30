@@ -8,10 +8,10 @@ export default function ServicesSetting() {
   return (
     <Section>
       <Styled.ServicesContainer>
-        <Styled.TextBlock>
-          <div>
-            <img src={service.src} />
-          </div>
+        <div>
+          <img src={service.src} />
+        </div>
+        <Styled.TextBlock position="left">
           <h2>{locale === "ua" ? "Налаштування" : "Настройка"}</h2>
           <p>
             {locale === "ua"

@@ -10,6 +10,9 @@ export const Title = styled.h1`
   font-size: ${SIZE.l};
   text-align: center;
   margin-bottom: 20px;
+  @media ${MEDIA.laptop} {
+    font-size: ${SIZE.xl};
+  }
 `;
 
 export const BrandList = styled.ul`
@@ -27,4 +30,7 @@ export const BrandItem = styled.li`
   aspect-ratio: 1/1;
   display: flex;
   align-items: center;
+  @media ${MEDIA.laptop} {
+    padding: 10px;
+  }
 `;

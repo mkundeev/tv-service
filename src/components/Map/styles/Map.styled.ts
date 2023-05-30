@@ -1,4 +1,4 @@
-import { COLORS, SIZE } from "@/theme";
+import { COLORS, SIZE, MEDIA } from "@/theme";
 import styled from "styled-components";
 import Container from "@/components/common/styles/Container.styled";
 
@@ -10,6 +10,9 @@ export const HomeMapContainer = styled(Container)`
   flex-direction: column;
   gap: 20px;
   min-height: calc(100vh - 200px);
+  @media ${MEDIA.laptop} {
+    flex-direction: row;
+  }
 `;
 export const HomeMapItem = styled.div`
   flex: 1 1 0px;
@@ -21,14 +24,19 @@ export const HomeMapContacts = styled(HomeMapItem)`
   justify-content: center;
   align-items: center;
   gap: 20px;
-  /* a,
-  p {
-    font-size: ${SIZE.m};
-  } */
+  @media ${MEDIA.laptop} {
+    a,
+    p {
+      font-size: ${SIZE.m};
+    }
+  }
 `;
 
 export const Title = styled.h2`
   font-size: ${SIZE.l};
+  @media ${MEDIA.laptop} {
+    font-size: ${SIZE.xl};
+  }
 `;
 export const mapStyles = [
   { elementType: "geometry", stylers: [{ color: "#242f3e" }] },
