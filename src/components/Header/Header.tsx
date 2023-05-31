@@ -10,7 +10,7 @@ export default function Header() {
   return (
     <>
       <Styled.Header>
-        <Styled.HeaderContainer display="mobile">
+        <Styled.HeaderContainerMobile>
           <Styled.MobileWrap>
             <Logo />
             <Phone $mobHeader={true} />
@@ -19,8 +19,8 @@ export default function Header() {
             <Navigation />
             <ChangeLocale />
           </Styled.MobileWrap>
-        </Styled.HeaderContainer>
-        <Styled.HeaderContainer display="tabl">
+        </Styled.HeaderContainerMobile>
+        <Styled.HeaderContainerTablet>
           <div>
             <Styled.MobileWrap>
               <Logo />
@@ -35,7 +35,7 @@ export default function Header() {
           </DisplayContainer>
           <WorkHours />
           <ChangeLocale />
-        </Styled.HeaderContainer>
+        </Styled.HeaderContainerTablet>
       </Styled.Header>
       <div style={{ height: "100px" }}></div>
     </>

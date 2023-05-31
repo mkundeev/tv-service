@@ -1,20 +1,28 @@
 import styled from "styled-components";
 import Container from "@/components/common/styles/Container.styled";
+import Phone from "../Phone";
 import { COLORS, MEDIA } from "@/theme";
-import { IDisplayProps } from "@/types/types";
 
 const HIGHT = `100px`;
 
 export const HeaderContainer = styled(Container)`
   height: 100%;
-  display: ${({ display }: IDisplayProps) =>
-    display === "mobile" ? "flex" : "none"};
+  display: flex;
   min-width: 382px;
   flex-direction: column;
   justify-content: space-around;
+`;
+
+export const HeaderContainerMobile = styled(HeaderContainer)`
   @media ${MEDIA.tablet} {
-    display: ${({ display }: IDisplayProps) =>
-      display === "tabl" ? "flex" : "none"};
+    display: none;
+  }
+`;
+
+export const HeaderContainerTablet = styled(HeaderContainer)`
+  display: none;
+  @media ${MEDIA.tablet} {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
   }

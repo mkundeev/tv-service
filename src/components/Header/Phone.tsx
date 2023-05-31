@@ -1,4 +1,3 @@
-import { COLORS } from "@/theme";
 import React from "react";
 import * as Styled from "./styles/Phone.styled";
 
@@ -8,7 +7,7 @@ type IProps = {
 export default function Phone({ $mobHeader }: IProps) {
   return (
     <Styled.PhoneContainer>
-      <Styled.PhoneIcon color={COLORS.primary} />
+      <Styled.PhoneIcon />
       <Styled.PhoneList $mobHeader={$mobHeader}>
         <li>
           <a href="tel:+380442337508">+38 (044) 233-75-08</a>

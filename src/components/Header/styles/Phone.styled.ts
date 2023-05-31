@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { HiPhone } from "react-icons/hi";
-import { MEDIA } from "@/theme";
+import { MEDIA, COLORS } from "@/theme";
 
 export const PhoneContainer = styled.div`
   display: flex;
@@ -25,6 +25,7 @@ export const PhoneList = styled.ul`
 export const PhoneIcon = styled(HiPhone)`
   width: 24px;
   height: 24px;
+  color: ${COLORS.primary};
   @media ${MEDIA.tablet} {
     width: 32px;
     height: 32px;
