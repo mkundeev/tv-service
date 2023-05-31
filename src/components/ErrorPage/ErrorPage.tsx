@@ -8,7 +8,7 @@ export default function ErrorPage() {
   return (
     <Section $screenHeight={true}>
       <Styled.ErrorContainer>
-        <p>Error 404</p>
+        <p>404 - Page Not Found</p>
         <Link href="/">
           {locale === "ua" ? "Повернутися на головну" : "Вернуться на главную"}
         </Link>
