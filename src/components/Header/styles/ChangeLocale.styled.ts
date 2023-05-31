@@ -7,7 +7,7 @@ interface LinkProps {
 }
 export const LocaleLink = styled(Link)`
   color: ${({ $active }: LinkProps) =>
-    $active ? COLORS.primary : COLORS.white};
+    $active ? COLORS.accent : COLORS.white};
 `;
 
 export const Divider = styled.div`

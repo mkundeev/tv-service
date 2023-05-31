@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import Container from "@/components/common/styles/Container.styled";
-import Phone from "../Phone";
 import { COLORS, MEDIA } from "@/theme";
 
 const HIGHT = `100px`;

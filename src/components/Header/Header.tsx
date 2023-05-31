@@ -10,6 +10,7 @@ export default function Header() {
   return (
     <>
       <Styled.Header>
+        {/* Mobile Header*/}
         <Styled.HeaderContainerMobile>
           <Styled.MobileWrap>
             <Logo />
@@ -20,6 +21,7 @@ export default function Header() {
             <ChangeLocale />
           </Styled.MobileWrap>
         </Styled.HeaderContainerMobile>
+        {/* Tablet and LaptopHeader*/}
         <Styled.HeaderContainerTablet>
           <div>
             <Styled.MobileWrap>

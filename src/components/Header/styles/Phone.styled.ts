@@ -25,7 +25,7 @@ export const PhoneList = styled.ul`
 export const PhoneIcon = styled(HiPhone)`
   width: 24px;
   height: 24px;
-  color: ${COLORS.primary};
+  color: ${COLORS.accent};
   @media ${MEDIA.tablet} {
     width: 32px;
     height: 32px;

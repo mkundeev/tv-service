@@ -18,7 +18,7 @@ export default function BrandsPage() {
         <Styled.BrandList>
           {Object.values(Icons).map((Element, index) => (
             <Styled.BrandItem key={index}>
-              <Element fill={COLORS.primary} />
+              <Element fill={COLORS.accent} />
             </Styled.BrandItem>
           ))}
         </Styled.BrandList>

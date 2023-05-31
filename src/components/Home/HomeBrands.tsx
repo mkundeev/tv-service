@@ -19,7 +19,7 @@ export default function HomeBrands() {
         <Styled.BrandsList>
           {Object.values(Icons)?.map((Element, index) => (
             <li key={index}>
-              <Element fill={COLORS.primary} height={isLaptop ? 50 : 30} />
+              <Element fill={COLORS.accent} height={isLaptop ? 50 : 30} />
             </li>
           ))}
         </Styled.BrandsList>

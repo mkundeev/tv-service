@@ -7,7 +7,7 @@ export default function WorkHours() {
   const { locale } = useRouter();
   return (
     <Styled.WorkHoursContainer>
-      <Styled.ClockIcon color={COLORS.primary} />
+      <Styled.ClockIcon color={COLORS.accent} />
       <div>
         <p>{locale === "ua" ? "Графік роботи" : "График работы"} </p>
         <Styled.WorkHoursText>ПН–СБ: 8:00–20:00</Styled.WorkHoursText>

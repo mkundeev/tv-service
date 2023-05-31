@@ -11,7 +11,7 @@ export default function AboutList() {
   return (
     <ul>
       <Styled.AboutItem>
-        <BsFillHandThumbsUpFill color={COLORS.primary} size={30} />
+        <BsFillHandThumbsUpFill color={COLORS.accent} size={30} />
         <p>
           {locale === "ua"
             ? "Якість роботи завжди була, є і буде головним пріоритетом компанії."
@@ -19,7 +19,7 @@ export default function AboutList() {
         </p>
       </Styled.AboutItem>
       <Styled.AboutItem>
-        <AiFillSafetyCertificate color={COLORS.primary} size={30} />
+        <AiFillSafetyCertificate color={COLORS.accent} size={30} />
         <p>
           {locale === "ua"
             ? "Сертифіковані фахівці, які зможуть провести ремонт телевізора  будь-якої складності"
@@ -27,7 +27,7 @@ export default function AboutList() {
         </p>
       </Styled.AboutItem>
       <Styled.AboutItem>
-        <GiStamper color={COLORS.primary} size={30} />
+        <GiStamper color={COLORS.accent} size={30} />
         <p>
           {locale === "ua"
             ? "Гарантія на роботу та запчастини"
@@ -35,7 +35,7 @@ export default function AboutList() {
         </p>
       </Styled.AboutItem>
       <Styled.AboutItem>
-        <AiFillHome color={COLORS.primary} size={30} />
+        <AiFillHome color={COLORS.accent} size={30} />
         <p>
           {locale === "ua"
             ? "Можливість провести ремонт телевізора як удома так і в майстерні"
@@ -43,7 +43,7 @@ export default function AboutList() {
         </p>
       </Styled.AboutItem>
       <Styled.AboutItem>
-        <FaMapMarkedAlt color={COLORS.primary} size={30} />
+        <FaMapMarkedAlt color={COLORS.accent} size={30} />
         <p>
           {locale === "ua"
             ? "Проводимо ремонт телевізорів у всіх районах Києва"

@@ -13,10 +13,10 @@ export const LocaleLink = styled(Link)`
   padding: 0 5px;
   width: fit-content;
   background-color: ${({ $active }: LinkProps) =>
-    $active ? COLORS.primary : "transparent"};
+    $active ? COLORS.accent : "transparent"};
   color: ${COLORS.white};
   :hover {
-    background-color: ${COLORS.primary};
+    background-color: ${COLORS.accent};
     color: ${COLORS.white};
   }
 `;

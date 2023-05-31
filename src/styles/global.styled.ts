@@ -41,7 +41,7 @@ export const GlobalStyles = createGlobalStyle`
   text-decoration: none;
   font-size: 14px;
   :hover {
-    color: ${COLORS.primary};
+    color: ${COLORS.accent};
   }
 }
 
