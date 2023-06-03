@@ -1,6 +1,5 @@
 import { useRouter } from "next/router";
 import Head from "next/head";
-import { Layout } from "@/components/common/Layout";
 import HomeMain from "@/components/Home/HomeMain";
 import HomeHero from "@/components/Home/HomeHero";
 import HomeService from "@/components/Home/HomeService";
@@ -12,7 +11,7 @@ import { structuredData } from "@/data/structuredData";
 export default function Home() {
   const { locale } = useRouter();
   return (
-    <Layout>
+    <>
       <>{locale === "ua" ? "" : ""}</>
       <Head>
         <title>
@@ -41,6 +40,6 @@ export default function Home() {
       <HomeService />
       <HomeBrands />
       <Map />
-    </Layout>
+    </>
   );
 }

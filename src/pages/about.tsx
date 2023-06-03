@@ -1,12 +1,11 @@
 import Head from "next/head";
 import AboutPage from "@/components/AboutPage/AboutPage";
 import { useRouter } from "next/router";
-import { Layout } from "@/components/common/Layout";
 
 export default function About() {
   const { locale } = useRouter();
   return (
-    <Layout>
+    <>
       <Head>
         <title>
           {locale === "ua"
@@ -24,6 +23,6 @@ export default function About() {
         />
       </Head>
       <AboutPage />
-    </Layout>
+    </>
   );
 }

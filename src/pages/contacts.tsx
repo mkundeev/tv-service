@@ -1,11 +1,10 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
 import Map from "@/components/Map/Map";
-import { Layout } from "@/components/common/Layout";
 export default function Contacts() {
   const { locale } = useRouter();
   return (
-    <Layout>
+    <>
       <Head>
         <title>
           {locale === "ua"
@@ -23,6 +22,6 @@ export default function Contacts() {
         />
       </Head>
       <Map />
-    </Layout>
+    </>
   );
 }

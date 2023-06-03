@@ -4,12 +4,11 @@ import ServicesDiagnostic from "@/components/Services/ServicesDiagnostic";
 import ServicesRepair from "@/components/Services/ServicesRepair";
 import ServicesSetting from "@/components/Services/ServicesSetting";
 import Divider from "@/components/common/Divider";
-import { Layout } from "@/components/common/Layout";
 
 export default function Services() {
   const { locale } = useRouter();
   return (
-    <Layout>
+    <>
       <Head>
         <title>
           {locale === "ua"
@@ -31,6 +30,6 @@ export default function Services() {
       <ServicesDiagnostic />
       <Divider />
       <ServicesSetting />
-    </Layout>
+    </>
   );
 }
