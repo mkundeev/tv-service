@@ -6,6 +6,7 @@ import Document, {
   Main,
   NextScript,
 } from "next/document";
+import Script from "next/script";
 import { ServerStyleSheet } from "styled-components";
 
 export default class MyDocument extends Document {
@@ -34,6 +35,25 @@ export default class MyDocument extends Document {
     return (
       <Html>
         <Head>
+          <Script
+            src="https://www.googletagmanager.com/gtag/js?id=G-FW93KC8VYS"
+            strategy="afterInteractive"
+          />
+          <Script
+            src="https://www.googletagmanager.com/gtag/js?id=G-FW93KC8VYS"
+            strategy="afterInteractive"
+            id="google-analytics"
+            dangerouslySetInnerHTML={{
+              __html: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-FW93KC8VYS', {
+            page_path: window.location.pathname,
+          });
+        `,
+            }}
+          />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link
             rel="preconnect"
