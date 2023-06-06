@@ -1,10 +1,10 @@
 import Container from "@/components/common/styles/Container.styled";
-import { COLORS, MEDIA } from "@/theme";
+import { COLORS, MEDIA, HEIGHT } from "@/theme";
 import styled from "styled-components";
 
 export const FooterSection = styled.footer`
   background-color: ${COLORS.headerBgc};
-  height: 100px;
+  height: ${HEIGHT.header};
 `;
 export const FooterContainer = styled(Container)`
   display: flex;
