@@ -32,28 +32,22 @@ export default class MyDocument extends Document {
   }
 
   render(): ReactElement {
+    const GA_MEASUREMENT_ID = process.env.GA_MEASUREMENT_ID;
     return (
       <Html>
         <Head>
           <Script
-            src="https://www.googletagmanager.com/gtag/js?id=G-FW93KC8VYS"
+            src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
             strategy="afterInteractive"
           />
-          <Script
-            src="https://www.googletagmanager.com/gtag/js?id=G-FW93KC8VYS"
-            strategy="afterInteractive"
-            id="google-analytics"
-            dangerouslySetInnerHTML={{
-              __html: `
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-FW93KC8VYS', {
-            page_path: window.location.pathname,
-          });
-        `,
-            }}
-          />
+          <Script id="google-analytics" strategy="afterInteractive">
+            {`
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){window.dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', '${GA_MEASUREMENT_ID}');
+  `}
+          </Script>
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link
             rel="preconnect"
