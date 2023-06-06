@@ -2,7 +2,7 @@ import styled from "styled-components";
 import Section from "@/components/common/styles/Section.styled";
 import bg from "@/../public/hero1.jpg";
 import Container from "@/components/common/styles/Container.styled";
-import { SIZE, MEDIA } from "@/theme";
+import { SIZE, MEDIA, HEIGHT } from "@/theme";
 
 export const HomeHeroSection = styled(Section)`
   background-image: url(${bg.src});
@@ -13,7 +13,7 @@ export const HomeHeroSection = styled(Section)`
 
 export const HomeHeroContainer = styled(Container)`
   height: 100%;
-  min-height: calc(100vh - 100px);
+  min-height: ${HEIGHT.topSection};
   display: flex;
   justify-content: center;
   align-items: center;

@@ -2,7 +2,7 @@ import styled from "styled-components";
 import Container from "@/components/common/styles/Container.styled";
 import Section from "@/components/common/styles/Section.styled";
 import bg from "../../../../public/bcg-brands.jpg";
-import { SIZE, MEDIA } from "@/theme";
+import { SIZE, MEDIA, HEIGHT } from "@/theme";
 
 export const HomeBrandsSection = styled(Section)`
   background-image: url(${bg.src});
@@ -12,7 +12,7 @@ export const HomeBrandsSection = styled(Section)`
 `;
 
 export const HomeBrandsContainer = styled(Container)`
-  min-height: calc(100vh - 100px);
+  min-height: ${HEIGHT.topSection};
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;

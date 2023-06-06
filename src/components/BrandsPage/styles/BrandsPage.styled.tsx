@@ -1,9 +1,9 @@
 import styled from "styled-components";
 import Section from "@/components/common/styles/Section.styled";
-import { COLORS, SIZE, MEDIA } from "@/theme";
+import { COLORS, SIZE, MEDIA, HEIGHT } from "@/theme";
 
 export const BrandSection = styled(Section)`
-  min-height: calc(100vh - 200px);
+  min-height: ${HEIGHT.section};
 `;
 
 export const Title = styled.h1`

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import Container from "@/components/common/styles/Container.styled";
-import { COLORS, SIZE } from "@/theme";
+import { COLORS, SIZE, HEIGHT } from "@/theme";
 
 export const ErrorContainer = styled(Container)`
   display: flex;
@@ -8,7 +8,7 @@ export const ErrorContainer = styled(Container)`
   justify-content: center;
   align-items: center;
   gap: 50px;
-  height: calc(100vh - 240px);
+  height: ${HEIGHT.section};
   p {
     font-size: ${SIZE.xl};
     color: ${COLORS.accent};

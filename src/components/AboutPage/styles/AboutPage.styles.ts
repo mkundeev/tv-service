@@ -2,7 +2,7 @@ import styled from "styled-components";
 import Section from "@/components/common/styles/Section.styled";
 import Container from "@/components/common/styles/Container.styled";
 import bg from "@/../public/hero1.jpg";
-import { SIZE, MEDIA } from "@/theme";
+import { SIZE, MEDIA, HEIGHT } from "@/theme";
 
 export const AboutSection = styled(Section)`
   background-image: url(${bg.src});
@@ -12,11 +12,11 @@ export const AboutSection = styled(Section)`
 `;
 
 export const AboutContainer = styled(Container)`
-  padding-top: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  min-height: ${HEIGHT.section};
 `;
 
 export const Title = styled.h2`

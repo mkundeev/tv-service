@@ -1,4 +1,4 @@
-import { COLORS, SIZE, MEDIA } from "@/theme";
+import { COLORS, SIZE, MEDIA, HEIGHT } from "@/theme";
 import styled from "styled-components";
 import Container from "@/components/common/styles/Container.styled";
 
@@ -15,9 +15,9 @@ export const HomeMapContainer = styled(Container)`
 `;
 export const HomeMapItem = styled.div`
   width: 100%;
-  height: calc(50vh - 110px);
+  height: ${HEIGHT.mapTabl};
   @media ${MEDIA.laptop} {
-    height: calc(100vh - 240px);
+    height: ${HEIGHT.mapLeptop};
   }
 `;
 
