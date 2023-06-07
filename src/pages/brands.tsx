@@ -8,7 +8,7 @@ export default function Brands() {
       <Head>
         <title>
           {locale === "ua"
-            ? "Ремонт телевізорів усіх марок"
+            ? "Ремонт телевізорів усіх марок "
             : "Ремонт телевизоров всех марок"}
         </title>
         <meta
