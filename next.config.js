@@ -15,6 +15,7 @@ const nextConfig = {
     GOOGLE_MAP_API: process.env.GOOGLE_MAP_API,
     GA_MEASUREMENT_ID: process.env.GA_MEASUREMENT_ID,
     GTM_ID: process.env.GTM_ID,
+    AW_ID: process.env.AW_ID,
   },
 };
 

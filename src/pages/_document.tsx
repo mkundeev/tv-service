@@ -34,6 +34,7 @@ export default class MyDocument extends Document {
   render(): ReactElement {
     const GA_MEASUREMENT_ID = process.env.GA_MEASUREMENT_ID;
     const GTM_ID = process.env.GTM_ID;
+    const AW_ID = process.env.AW_ID;
     return (
       <Html>
         <Head>
@@ -47,6 +48,7 @@ export default class MyDocument extends Document {
     function gtag(){window.dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', '${GA_MEASUREMENT_ID}');
+    gtag('config', '${AW_ID}')
   `}
           </Script>
           <Script id="gtm-script" strategy="afterInteractive">{`
