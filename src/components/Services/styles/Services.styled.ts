@@ -9,6 +9,9 @@ export const ServicesContainer = styled(Container)`
     > div {
       flex: 1 1 0px;
     }
+    img {
+      width: 50%;
+    }
   }
 `;
 

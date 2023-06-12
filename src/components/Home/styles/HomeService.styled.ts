@@ -27,6 +27,12 @@ export const HomeServiceItem = styled.li`
 
     margin-top: 10px;
   }
+  img {
+    width: 50%;
+    @media ${MEDIA.laptop} {
+      width: 100%;
+    }
+  }
   :nth-child(2n) {
     flex-direction: row-reverse;
     @media ${MEDIA.laptop} {
@@ -37,13 +43,6 @@ export const HomeServiceItem = styled.li`
   @media ${MEDIA.laptop} {
     flex: 1 1 0px;
     flex-direction: column;
-  }
-`;
-
-export const ImageService = styled.img`
-  width: 50%;
-  @media ${MEDIA.laptop} {
-    width: 100%;
   }
 `;
 

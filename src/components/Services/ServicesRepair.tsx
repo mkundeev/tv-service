@@ -1,4 +1,5 @@
 import { useRouter } from "next/router";
+import Image from "next/image";
 import Section from "../common/styles/Section.styled";
 import service from "../../../public/home-service1.jpg";
 import * as Styled from "./styles/Services.styled";
@@ -8,9 +9,14 @@ export default function ServicesRepair() {
   return (
     <Section>
       <Styled.ServicesContainer>
-        <div>
-          <img src={service.src} />
-        </div>
+        <Image
+          src={service}
+          alt={
+            locale === "ua"
+              ? "Ремонт телевізорів в Києві"
+              : "Ремонт телевизоров в Киеве"
+          }
+        />
         <Styled.TextBlock position="left">
           <h2>Ремонт</h2>
           <p>

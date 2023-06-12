@@ -1,4 +1,5 @@
 import { useRouter } from "next/router";
+import Image from "next/image";
 import Section from "../common/styles/Section.styled";
 import service1 from "../../../public/home-service1.jpg";
 import service2 from "../../../public/home-service2.jpg";
@@ -12,8 +13,8 @@ export default function HomeService() {
       <Styled.HomeServiceContainer>
         <Styled.HomeServiceList>
           <Styled.HomeServiceItem>
-            <Styled.ImageService
-              src={service1.src}
+            <Image
+              src={service1}
               alt={
                 locale === "ua"
                   ? "Ремонт телевізорів в Києві"
@@ -30,8 +31,8 @@ export default function HomeService() {
             </Styled.TextBlock>
           </Styled.HomeServiceItem>
           <Styled.HomeServiceItem>
-            <Styled.ImageService
-              src={service3.src}
+            <Image
+              src={service3}
               alt={
                 locale === "ua"
                   ? "Діагностика телевізорів в Києві"
@@ -48,8 +49,8 @@ export default function HomeService() {
             </Styled.TextBlock>
           </Styled.HomeServiceItem>
           <Styled.HomeServiceItem>
-            <Styled.ImageService
-              src={service2.src}
+            <Image
+              src={service2}
               alt={
                 locale === "ua"
                   ? "Налаштування телевізорів в Києві"
