@@ -1,14 +1,10 @@
 import styled from "styled-components";
 import Section from "@/components/common/styles/Section.styled";
-import bg from "@/../public/hero1.jpg";
 import Container from "@/components/common/styles/Container.styled";
 import { SIZE, MEDIA, HEIGHT } from "@/theme";
 
 export const HomeHeroSection = styled(Section)`
-  background-image: url(${bg.src});
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position-y: bottom;
+  position: relative;
 `;
 
 export const HomeHeroContainer = styled(Container)`

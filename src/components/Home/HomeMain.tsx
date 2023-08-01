@@ -1,6 +1,8 @@
 import Section from "../common/styles/Section.styled";
 import * as Styled from "./styles/HomeMain.styled";
 import { useRouter } from "next/router";
+import Image from "next/image";
+import bg from "../../../public/tv-main.jpg";
 
 export default function HomeMain() {
   const { locale } = useRouter();
@@ -47,6 +49,19 @@ export default function HomeMain() {
             </Styled.Text>
           )}
         </Styled.TextBlock>
+        <Styled.ImageContainer>
+          <Image
+            src={bg}
+            alt={
+              locale === "ua"
+                ? "Ремонт телевізорів у Києві"
+                : "Ремонт телевизоров в Киеве"
+            }
+            fill
+            sizes="100vh"
+            style={{ objectFit: "contain" }}
+          />
+        </Styled.ImageContainer>
       </Styled.HomeMainContainer>
     </Section>
   );

@@ -1,11 +1,24 @@
 import { useRouter } from "next/router";
 import Phone from "../Header/Phone";
 import * as Styled from "./styles/HomeHero.styled";
+import { ImageContainer } from "../common/styles/ImageContainer.styled";
 import AboutList from "../AboutPage/AboutList";
+import bg from "@/../public/hero1.jpg";
+import Image from "next/image";
 export default function HomeHero() {
   const { locale } = useRouter();
   return (
     <Styled.HomeHeroSection>
+      <ImageContainer>
+        <Image
+          src={bg}
+          alt={locale === "ua" ? "Ремонт телевізорів" : "Ремонт телевизоров"}
+          fill
+          priority
+          style={{ objectFit: "cover" }}
+          sizes="100vh"
+        />
+      </ImageContainer>
       <Styled.HomeHeroContainer>
         <Styled.Title>
           {locale === "ua"

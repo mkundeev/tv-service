@@ -3,6 +3,9 @@ import { useMedia } from "react-use";
 import * as Styled from "./styles/HomeBrands.styled";
 import * as Icons from "@/svg";
 import { COLORS, MEDIA } from "@/theme";
+import bg from "../../../public/bcg-brands.jpg";
+import { ImageContainer } from "../common/styles/ImageContainer.styled";
+import Image from "next/image";
 
 export default function HomeBrands() {
   const { locale } = useRouter();
@@ -10,6 +13,15 @@ export default function HomeBrands() {
 
   return (
     <Styled.HomeBrandsSection>
+      <ImageContainer>
+        <Image
+          src={bg}
+          alt={locale === "ua" ? "Ремонт телевізорів всіх марок" : "всех марок"}
+          fill
+          style={{ objectFit: "cover" }}
+          sizes="100vh"
+        />
+      </ImageContainer>
       <Styled.HomeBrandsContainer>
         <Styled.Title>
           {locale === "ua"

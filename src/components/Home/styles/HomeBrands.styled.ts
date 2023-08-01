@@ -1,14 +1,10 @@
 import styled from "styled-components";
 import Container from "@/components/common/styles/Container.styled";
 import Section from "@/components/common/styles/Section.styled";
-import bg from "../../../../public/bcg-brands.jpg";
 import { SIZE, MEDIA, HEIGHT } from "@/theme";
 
 export const HomeBrandsSection = styled(Section)`
-  background-image: url(${bg.src});
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position-y: top;
+  position: relative;
 `;
 
 export const HomeBrandsContainer = styled(Container)`
