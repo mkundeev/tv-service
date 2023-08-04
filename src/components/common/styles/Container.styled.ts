@@ -1,9 +1,5 @@
 import styled from "styled-components";
-import { MEDIA, BREAK_POINTS, HEIGHT } from "@/theme";
-
-type IProps = {
-  $screenHeight?: boolean;
-};
+import { MEDIA, BREAK_POINTS } from "@/theme";
 
 const Container = styled.div`
   padding: 10px;
