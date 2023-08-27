@@ -4,6 +4,7 @@ import Section from "../common/styles/Section.styled";
 import * as Icons from "@/svg";
 import { COLORS } from "@/theme";
 import * as Styled from "./styles/BrandsPage.styled";
+import { LinkSvg } from "@/components/common/styles/LinkSvg";
 
 export default function BrandsPage() {
   const { locale } = useRouter();
@@ -18,7 +19,9 @@ export default function BrandsPage() {
         <Styled.BrandList>
           {Object.values(Icons).map((Element, index) => (
             <Styled.BrandItem key={index}>
-              <Element fill={COLORS.accent} />
+              <LinkSvg href={`/brands/${Element.name.slice(3).toLowerCase()}`}>
+                <Element fill={COLORS.accent} />
+              </LinkSvg>
             </Styled.BrandItem>
           ))}
         </Styled.BrandList>

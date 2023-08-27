@@ -8,14 +8,13 @@ interface LinkProps {
 export const LocaleLink = styled(Link)`
   color: ${({ $active }: LinkProps) =>
     $active ? COLORS.accent : COLORS.white};
-`;
-
-export const Divider = styled.div`
-  color: ${COLORS.lightGrey};
+  padding: 0 5px;
+  :first-child {
+    border-right: 1.5px solid grey;
+  }
 `;
 
 export const LocaleContainer = styled.div`
   display: flex;
   align-items: center;
-  gap: 5px;
 `;

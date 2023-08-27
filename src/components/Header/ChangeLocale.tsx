@@ -9,7 +9,6 @@ export default function ChangeLocale() {
       <Styled.LocaleLink href={pathname} locale="ua" $active={locale === "ua"}>
         UA
       </Styled.LocaleLink>
-      <Styled.Divider>|</Styled.Divider>
       <Styled.LocaleLink href={pathname} locale="ru" $active={locale === "ru"}>
         RU
       </Styled.LocaleLink>
