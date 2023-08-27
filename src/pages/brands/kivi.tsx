@@ -11,16 +11,16 @@ export default function Kivi() {
       <Head>
         <title>
           {locale === "ua"
-            ? "Ремонт телевізорів Sony"
-            : "Ремонт телевизоров Sony"}
+            ? "Ремонт телевізорів Kivi"
+            : "Ремонт телевизоров Kivi"}
         </title>
         <meta
           name="description"
           key="desc"
           content={
             locale === "ua"
-              ? "Ремонт телевізорів Sony у Києві"
-              : "Ремонт телевізорів Sony в Киеве"
+              ? "Ремонт телевізорів Kivi у Києві"
+              : "Ремонт телевізорів Kivi в Киеве"
           }
         />
       </Head>
