@@ -8,7 +8,7 @@ interface LinkProps {
 export const LocaleLink = styled(Link)`
   color: ${({ $active }: LinkProps) =>
     $active ? COLORS.accent : COLORS.white};
-  padding: 0 5px;
+  padding: 0 7px;
   :first-child {
     border-right: 1.5px solid grey;
   }
