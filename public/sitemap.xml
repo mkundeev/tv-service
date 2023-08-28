@@ -9,103 +9,203 @@
 
 <url>
   <loc>https://www.tv-service.com.ua/</loc>
-  <lastmod>2023-08-04T14:14:17+00:00</lastmod>
+  <lastmod>2023-08-28T15:52:56+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://www.tv-service.com.ua/services</loc>
-  <lastmod>2023-08-04T14:14:17+00:00</lastmod>
+  <lastmod>2023-08-28T15:52:56+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.tv-service.com.ua/brands</loc>
-  <lastmod>2023-08-04T14:14:17+00:00</lastmod>
+  <lastmod>2023-08-28T15:52:56+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.tv-service.com.ua/about</loc>
-  <lastmod>2023-08-04T14:14:17+00:00</lastmod>
+  <lastmod>2023-08-28T15:52:56+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.tv-service.com.ua/contacts</loc>
-  <lastmod>2023-08-04T14:14:17+00:00</lastmod>
+  <lastmod>2023-08-28T15:52:56+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.tv-service.com.ua/ru</loc>
-  <lastmod>2023-08-04T14:14:17+00:00</lastmod>
+  <lastmod>2023-08-28T15:52:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.tv-service.com.ua/brands/bravis</loc>
+  <lastmod>2023-08-28T15:52:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.tv-service.com.ua/brands/ergo</loc>
+  <lastmod>2023-08-28T15:52:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.tv-service.com.ua/brands/ericsson</loc>
+  <lastmod>2023-08-28T15:52:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.tv-service.com.ua/brands/grunding</loc>
+  <lastmod>2023-08-28T15:52:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.tv-service.com.ua/brands/jvc</loc>
+  <lastmod>2023-08-28T15:52:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.tv-service.com.ua/brands/kivi</loc>
+  <lastmod>2023-08-28T15:52:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.tv-service.com.ua/brands/pioneer</loc>
+  <lastmod>2023-08-28T15:52:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.tv-service.com.ua/brands/tcl</loc>
+  <lastmod>2023-08-28T15:52:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.tv-service.com.ua/brands/lg</loc>
+  <lastmod>2023-08-28T15:52:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.tv-service.com.ua/brands/samsung</loc>
+  <lastmod>2023-08-28T15:52:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.tv-service.com.ua/brands/sony</loc>
+  <lastmod>2023-08-28T15:52:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.tv-service.com.ua/brands/toshiba</loc>
+  <lastmod>2023-08-28T15:52:56+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.tv-service.com.ua/brands/phanasonic</loc>
-  <lastmod>2023-08-04T14:14:17+00:00</lastmod>
-  <priority>1.00</priority>
+  <lastmod>2023-08-28T15:52:56+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.tv-service.com.ua/brands/samsung</loc>
-  <lastmod>2023-08-04T14:14:17+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://www.tv-service.com.ua/brands/sony</loc>
-  <lastmod>2023-08-04T14:14:17+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://www.tv-service.com.ua/brands/toshiba</loc>
-  <lastmod>2023-08-04T14:14:17+00:00</lastmod>
-  <priority>1.00</priority>
+  <loc>https://www.tv-service.com.ua/brands/philips</loc>
+  <lastmod>2023-08-28T15:52:56+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.tv-service.com.ua/brands/xiaomi</loc>
-  <lastmod>2023-08-04T14:14:17+00:00</lastmod>
-  <priority>1.00</priority>
+  <lastmod>2023-08-28T15:52:56+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.tv-service.com.ua/ru/services</loc>
-  <lastmod>2023-08-04T14:14:17+00:00</lastmod>
+  <lastmod>2023-08-28T15:52:56+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.tv-service.com.ua/ru/brands</loc>
-  <lastmod>2023-08-04T14:14:17+00:00</lastmod>
+  <lastmod>2023-08-28T15:52:56+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.tv-service.com.ua/ru/about</loc>
-  <lastmod>2023-08-04T14:14:17+00:00</lastmod>
+  <lastmod>2023-08-28T15:52:56+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.tv-service.com.ua/ru/contacts</loc>
-  <lastmod>2023-08-04T14:14:17+00:00</lastmod>
+  <lastmod>2023-08-28T15:52:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.tv-service.com.ua/ru/brands/bravis</loc>
+  <lastmod>2023-08-28T15:52:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.tv-service.com.ua/ru/brands/ergo</loc>
+  <lastmod>2023-08-28T15:52:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.tv-service.com.ua/ru/brands/ericsson</loc>
+  <lastmod>2023-08-28T15:52:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.tv-service.com.ua/ru/brands/grunding</loc>
+  <lastmod>2023-08-28T15:52:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.tv-service.com.ua/ru/brands/jvc</loc>
+  <lastmod>2023-08-28T15:52:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.tv-service.com.ua/ru/brands/kivi</loc>
+  <lastmod>2023-08-28T15:52:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.tv-service.com.ua/ru/brands/pioneer</loc>
+  <lastmod>2023-08-28T15:52:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.tv-service.com.ua/ru/brands/tcl</loc>
+  <lastmod>2023-08-28T15:52:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.tv-service.com.ua/ru/brands/lg</loc>
+  <lastmod>2023-08-28T15:52:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.tv-service.com.ua/ru/brands/samsung</loc>
+  <lastmod>2023-08-28T15:52:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.tv-service.com.ua/ru/brands/sony</loc>
+  <lastmod>2023-08-28T15:52:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.tv-service.com.ua/ru/brands/toshiba</loc>
+  <lastmod>2023-08-28T15:52:56+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.tv-service.com.ua/ru/brands/phanasonic</loc>
-  <lastmod>2023-08-04T14:14:17+00:00</lastmod>
-  <priority>1.00</priority>
+  <lastmod>2023-08-28T15:52:56+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.tv-service.com.ua/ru/brands/samsung</loc>
-  <lastmod>2023-08-04T14:14:17+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://www.tv-service.com.ua/ru/brands/sony</loc>
-  <lastmod>2023-08-04T14:14:17+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://www.tv-service.com.ua/ru/brands/toshiba</loc>
-  <lastmod>2023-08-04T14:14:17+00:00</lastmod>
-  <priority>1.00</priority>
+  <loc>https://www.tv-service.com.ua/ru/brands/philips</loc>
+  <lastmod>2023-08-28T15:52:56+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.tv-service.com.ua/ru/brands/xiaomi</loc>
-  <lastmod>2023-08-04T14:14:17+00:00</lastmod>
-  <priority>1.00</priority>
+  <lastmod>2023-08-28T15:52:56+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 
 
