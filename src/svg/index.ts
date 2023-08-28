@@ -1,15 +1,35 @@
-export { SvgBravis } from "./SvgBravis";
-export { SvgErgo } from "./SvgErgo";
-export { SvgEricsson } from "./SvgEricsson";
-export { SvgGrunding } from "./SvgGrunding";
-export { SvgJVC } from "./SvgJVC";
-export { SvgKivi } from "./SvgKivi";
-export { SvgPioneer } from "./SvgPioneer";
-export { SvgTCL } from "./SvgTCL";
-export { SvgLG } from "./SvgLG";
-export { SvgSamsung } from "./SvgSamsung";
-export { SvgSony } from "./SvgSony";
-export { SvgToshiba } from "./SvgToshiba";
-export { SvgPhanasonic } from "./SvgPhanasonic";
-export { SvgPhilips } from "./SvgPhilips";
-export { SvgXiaomi } from "./SvgXiaomi";
+import { SvgBravis } from "./SvgBravis";
+import { SvgErgo } from "./SvgErgo";
+import { SvgEricsson } from "./SvgEricsson";
+import { SvgGrunding } from "./SvgGrunding";
+import { SvgJVC } from "./SvgJVC";
+import { SvgKivi } from "./SvgKivi";
+import { SvgPioneer } from "./SvgPioneer";
+import { SvgTCL } from "./SvgTCL";
+import { SvgLG } from "./SvgLG";
+import { SvgSamsung } from "./SvgSamsung";
+import { SvgSony } from "./SvgSony";
+import { SvgToshiba } from "./SvgToshiba";
+import { SvgPhanasonic } from "./SvgPhanasonic";
+import { SvgPhilips } from "./SvgPhilips";
+import { SvgXiaomi } from "./SvgXiaomi";
+
+const Icons = [
+  { name: "bravis", Icon: SvgBravis },
+  { name: "ergo", Icon: SvgErgo },
+  { name: "Ericsson", Icon: SvgEricsson },
+  { name: "Grunding", Icon: SvgGrunding },
+  { name: "JVC", Icon: SvgJVC },
+  { name: "Kivi ", Icon: SvgKivi },
+  { name: "Pioneer", Icon: SvgPioneer },
+  { name: "TCL", Icon: SvgTCL },
+  { name: "LG", Icon: SvgLG },
+  { name: "Samsung", Icon: SvgSamsung },
+  { name: "Sony ", Icon: SvgSony },
+  { name: "Toshiba", Icon: SvgToshiba },
+  { name: "Phanasonic", Icon: SvgPhanasonic },
+  { name: "Philips", Icon: SvgPhilips },
+  { name: "Xiaomi", Icon: SvgXiaomi },
+];
+
+export default Icons;

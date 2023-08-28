@@ -2,7 +2,7 @@ import { useRouter } from "next/router";
 import { useMedia } from "react-use";
 import * as Styled from "./styles/HomeBrands.styled";
 import { LinkSvg } from "@/components/common/styles/LinkSvg";
-import * as Icons from "@/svg";
+import Icons from "@/svg";
 import { COLORS, MEDIA } from "@/theme";
 import bg from "../../../public/bcg-brands.jpg";
 import { ImageContainer } from "@/components/common/styles/ImageContainer.styled";
@@ -30,16 +30,13 @@ export default function HomeBrands() {
             : "Мы ремонтируем телевизоры всех марок"}
         </Styled.Title>
         <Styled.BrandsList>
-          {Icons &&
-            Object.values(Icons).map((Element, index) => (
-              <li key={index}>
-                <LinkSvg
-                  href={`/brands/${Element.name.slice(3).toLowerCase()}`}
-                >
-                  <Element fill={COLORS.accent} height={isLaptop ? 50 : 30} />
-                </LinkSvg>
-              </li>
-            ))}
+          {Icons.map(({ name, Icon }, index) => (
+            <li key={index}>
+              <LinkSvg href={`/brands/${name.toLowerCase()}`}>
+                <Icon fill={COLORS.accent} height={isLaptop ? 50 : 30} />
+              </LinkSvg>
+            </li>
+          ))}
         </Styled.BrandsList>
       </Styled.HomeBrandsContainer>
     </Styled.HomeBrandsSection>
