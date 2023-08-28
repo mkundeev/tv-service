@@ -17,13 +17,16 @@ export default function BrandsPage() {
             : "Ремонт телевизоров следующих марок в Киеве:"}
         </Styled.Title>
         <Styled.BrandList>
-          {Object.values(Icons).map((Element, index) => (
-            <Styled.BrandItem key={index}>
-              <LinkSvg href={`/brands/${Element.name.slice(3).toLowerCase()}`}>
-                <Element fill={COLORS.accent} />
-              </LinkSvg>
-            </Styled.BrandItem>
-          ))}
+          {Icons &&
+            Object.values(Icons).map((Element, index) => (
+              <Styled.BrandItem key={index}>
+                <LinkSvg
+                  href={`/brands/${Element.name.slice(3).toLowerCase()}`}
+                >
+                  <Element fill={COLORS.accent} />
+                </LinkSvg>
+              </Styled.BrandItem>
+            ))}
         </Styled.BrandList>
       </Container>
     </Section>

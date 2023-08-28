@@ -30,13 +30,16 @@ export default function HomeBrands() {
             : "Мы ремонтируем телевизоры всех марок"}
         </Styled.Title>
         <Styled.BrandsList>
-          {Object.values(Icons)?.map((Element, index) => (
-            <li key={index}>
-              <LinkSvg href={`/brands/${Element.name.slice(3).toLowerCase()}`}>
-                <Element fill={COLORS.accent} height={isLaptop ? 50 : 30} />
-              </LinkSvg>
-            </li>
-          ))}
+          {Icons &&
+            Object.values(Icons).map((Element, index) => (
+              <li key={index}>
+                <LinkSvg
+                  href={`/brands/${Element.name.slice(3).toLowerCase()}`}
+                >
+                  <Element fill={COLORS.accent} height={isLaptop ? 50 : 30} />
+                </LinkSvg>
+              </li>
+            ))}
         </Styled.BrandsList>
       </Styled.HomeBrandsContainer>
     </Styled.HomeBrandsSection>
