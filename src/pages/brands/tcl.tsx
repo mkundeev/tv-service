@@ -27,7 +27,7 @@ export default function TCL() {
       <Section $screenHeight>
         <Container>
           {locale === "ru" ? (
-            <div>
+            <Styled.Page>
               <h1>
                 Профессиональный ремонт телевизоров TCL: Профессиональные
                 Решения для Вашего Телевизора
@@ -118,9 +118,9 @@ export default function TCL() {
                 качественный ремонт. Не теряйте времени - свяжитесь с нами
                 сегодня и верните свой телевизор TCL к жизни!
               </p>
-            </div>
+            </Styled.Page>
           ) : (
-            <div>
+            <Styled.Page>
               <h1>
                 Професійний ремонт телевізорів TCL: Професійні Рішення для
                 Вашого Телевізора
@@ -208,7 +208,7 @@ export default function TCL() {
                 вас. Не гайте часу – зв'яжіться з нами сьогодні і поверніть свій
                 телевізор TCL до життя!
               </p>
-            </div>
+            </Styled.Page>
           )}
         </Container>
       </Section>

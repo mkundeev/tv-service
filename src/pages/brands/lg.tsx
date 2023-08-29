@@ -25,7 +25,7 @@ export default function LG() {
       <Section $screenHeight>
         <Container>
           {locale === "ru" ? (
-            <div>
+            <Styled.Page>
               <h1>
                 Ремонте телевизоров LG: Профессиональный подход к восстановлению
                 Вашего телевизора
@@ -114,9 +114,9 @@ export default function LG() {
                 теряйте времени - свяжитесь с нами уже сегодня и верните свой
                 телевизор LG к жизни!
               </p>
-            </div>
+            </Styled.Page>
           ) : (
-            <div>
+            <Styled.Page>
               <h1>
                 Ремонт телевізорів LG: Професійний підхід до відновлення Вашого
                 телевізора
@@ -201,7 +201,7 @@ export default function LG() {
                 часу - зв'яжіться з нами вже сьогодні і поверніть свій телевізор
                 LG до життя!
               </p>
-            </div>
+            </Styled.Page>
           )}
         </Container>
       </Section>

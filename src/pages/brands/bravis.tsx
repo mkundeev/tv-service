@@ -27,7 +27,7 @@ export default function Bravis() {
       <Section $screenHeight>
         <Container>
           {locale === "ru" ? (
-            <div>
+            <Styled.Page>
               <h1>
                 Ремонт телевизоров Bravis: профессиональное восстановление
                 качества вашего оборудования
@@ -113,9 +113,9 @@ export default function Bravis() {
                 качество вашего оборудования. Обратитесь к нам прямо сейчас и
                 верните свой телевизор Bravis в рабочее состояние!
               </p>
-            </div>
+            </Styled.Page>
           ) : (
-            <div>
+            <Styled.Page>
               <h1>
                 Ремонт телевізорів Bravis: професійне відновлення якості вашого
                 обладнання
@@ -201,7 +201,7 @@ export default function Bravis() {
                 якість вашого обладнання. Зверніться до нас прямо зараз і
                 поверніть свій телевізор Bravis до робочого стану!
               </p>
-            </div>
+            </Styled.Page>
           )}
         </Container>
       </Section>

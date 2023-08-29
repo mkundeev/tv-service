@@ -27,7 +27,7 @@ export default function Toshiba() {
       <Section $screenHeight>
         <Container>
           {locale === "ru" ? (
-            <div>
+            <Styled.Page>
               <h1>
                 Качественные услуги по ремонту телевизоров Toshiba:
                 Восстанавливаем яркость изображения на вашем экране
@@ -132,9 +132,9 @@ export default function Toshiba() {
                 нами сегодня, чтобы запланировать ремонт и наслаждаться
                 выдающейся производительностью вашего телевизора Toshiba вновь.
               </p>
-            </div>
+            </Styled.Page>
           ) : (
-            <div>
+            <Styled.Page>
               <h1>
                 Професійний ремонт телевізорів Toshiba: Відновлення яскравості
                 зображення на вашому екрані
@@ -238,7 +238,7 @@ export default function Toshiba() {
                 запланувати ремонт та насолодитися видаючою продуктивністю
                 вашого телевізора Toshiba знову.
               </p>
-            </div>
+            </Styled.Page>
           )}
         </Container>
       </Section>

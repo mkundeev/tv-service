@@ -27,7 +27,7 @@ export default function Ericsson() {
       <Section $screenHeight>
         <Container>
           {locale === "ru" ? (
-            <div>
+            <Styled.Page>
               <h1>
                 Ремонт телевизоров Ericsson: профессиональная помощь вашему
                 оборудованию
@@ -114,9 +114,9 @@ export default function Ericsson() {
                 работы вашего оборудования. Обращайтесь к нам уже сейчас, и ваш
                 телевизор Ericsson снова будет работать!
               </p>
-            </div>
+            </Styled.Page>
           ) : (
-            <div>
+            <Styled.Page>
               <h1>
                 Ремонт телевізорів Ericsson: професійна допомога вашому
                 обладнанню
@@ -201,7 +201,7 @@ export default function Ericsson() {
                 роботи вашого обладнання. Звертайтеся до нас вже зараз, і ваш
                 телевізор Ericsson знову буде працювати!
               </p>
-            </div>
+            </Styled.Page>
           )}
         </Container>
       </Section>

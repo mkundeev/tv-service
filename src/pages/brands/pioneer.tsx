@@ -27,7 +27,7 @@ export default function Pioneer() {
       <Section $screenHeight>
         <Container>
           {locale === "ru" ? (
-            <div>
+            <Styled.Page>
               <h1>
                 Ремонт телевизоров Pioneer: Восстановление высокого качества
                 изображения и звука
@@ -119,9 +119,9 @@ export default function Pioneer() {
                 уже сегодня и верните ваш телевизор Pioneer к его лучшему
                 состоянию!
               </p>
-            </div>
+            </Styled.Page>
           ) : (
-            <div>
+            <Styled.Page>
               <h1>
                 Ремонт телевізорів Pioneer: Відновлення високої якості
                 зображення та звуку
@@ -212,7 +212,7 @@ export default function Pioneer() {
                 сьогодні та поверніть ваш телевізор Pioneer до його найкращого
                 стану!
               </p>
-            </div>
+            </Styled.Page>
           )}
         </Container>
       </Section>

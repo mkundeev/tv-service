@@ -27,7 +27,7 @@ export default function Kivi() {
       <Section $screenHeight>
         <Container>
           {locale === "ru" ? (
-            <div>
+            <Styled.Page>
               <h1>Профессиональный ремонт телевизоров KIVI в Киеве</h1>
               <Styled.AfterTitle>
                 Мы специализируемся на ремонте и обслуживании телевизоров KIVI.
@@ -94,9 +94,9 @@ export default function Kivi() {
                 предоставлять качественные и надежные услуги ремонта телевизоров
                 KIVI.
               </p>
-            </div>
+            </Styled.Page>
           ) : (
-            <div>
+            <Styled.Page>
               <h1>Професійний ремонт телевізорів KIVI у Києві</h1>
               <Styled.AfterTitle>
                 Ми спеціалізуємося на ремонті та обслуговуванні телевізорів
@@ -162,7 +162,7 @@ export default function Kivi() {
                 відновить його до оптимальної робочої стану. Ми горді надавати
                 якісні та надійні послуги ремонту телевізорів KIVI.
               </p>
-            </div>
+            </Styled.Page>
           )}
         </Container>
       </Section>

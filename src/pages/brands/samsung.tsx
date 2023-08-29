@@ -27,7 +27,7 @@ export default function Samsung() {
       <Section $screenHeight>
         <Container>
           {locale === "ru" ? (
-            <div>
+            <Styled.Page>
               <h1>
                 Разрешение проблем с телевизорами Samsung: Экспертные решения
                 для непрерывного просмотра
@@ -142,9 +142,9 @@ export default function Samsung() {
                 подчеркивания нашей компетентности в ремонте телевизоров
                 Samsung.
               </Styled.Warning>
-            </div>
+            </Styled.Page>
           ) : (
-            <div>
+            <Styled.Page>
               <h1>
                 Вирішення проблем з телевізорами Samsung: Експертні рішення для
                 безперебійного перегляду
@@ -254,7 +254,7 @@ export default function Samsung() {
                 виключно для ілюстративних цілей і для підкреслення нашої
                 компетентності у ремонті телевізорів Samsung.
               </Styled.Warning>
-            </div>
+            </Styled.Page>
           )}
         </Container>
       </Section>

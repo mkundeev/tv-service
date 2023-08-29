@@ -27,7 +27,7 @@ export default function Philips() {
       <Section $screenHeight>
         <Container>
           {locale === "ru" ? (
-            <div>
+            <Styled.Page>
               <h1>
                 Ремонт телевизоров Philips: Профессиональное Восстановление
                 Качества Вашего Оборудования
@@ -119,9 +119,9 @@ export default function Philips() {
                 обеспечить надежный ремонт. Не теряйте времени - свяжитесь с
                 нами уже сегодня и верните ваш телевизор Philips к жизни!
               </p>
-            </div>
+            </Styled.Page>
           ) : (
-            <div>
+            <Styled.Page>
               <h1>
                 Ремонт телевізорів Philips: Професійне відновлення якості вашого
                 обладнання
@@ -208,7 +208,7 @@ export default function Philips() {
                 забезпечити надійний ремонт. Не втрачайте часу - зв'яжіться з
                 нами вже сьогодні та поверніть ваш телевізор Philips до життя!
               </p>
-            </div>
+            </Styled.Page>
           )}
         </Container>
       </Section>

@@ -27,7 +27,7 @@ export default function Xiaomi() {
       <Section $screenHeight>
         <Container>
           {locale === "ru" ? (
-            <div>
+            <Styled.Page>
               <h1>
                 Профессиональные услуги по ремонту телевизоров Xiaomi: Гарантия
                 связи и производительности
@@ -130,9 +130,9 @@ export default function Xiaomi() {
                 наслаждаться бесперебойной работой вашего телевизора Xiaomi
                 снова.
               </p>
-            </div>
+            </Styled.Page>
           ) : (
-            <div>
+            <Styled.Page>
               <h1>
                 Кваліфіковані послуги ремонту телевізорів Xiaomi: Забезпечення
                 зв'язку та продуктивності
@@ -233,7 +233,7 @@ export default function Xiaomi() {
                 нами сьогодні, щоб назначити ремонт і переконатися в надійності,
                 ефективності та якості наших послуг з ремонту телевізорів.
               </p>
-            </div>
+            </Styled.Page>
           )}
         </Container>
       </Section>

@@ -27,7 +27,7 @@ export default function Ergo() {
       <Section $screenHeight>
         <Container>
           {locale === "ru" ? (
-            <div>
+            <Styled.Page>
               <h1>
                 Ремонт телевизоров Ergo: профессиональная помощь вашему
                 оборудованию
@@ -113,9 +113,9 @@ export default function Ergo() {
                 работы вашего оборудования. Обращайтесь к нам уже сейчас, и ваш
                 телевизор Ergo снова будет работать на полную мощность!
               </p>
-            </div>
+            </Styled.Page>
           ) : (
-            <div>
+            <Styled.Page>
               <h1>
                 Ремонт телевізорів Ergo: професійна допомога вашому обладнанню
               </h1>
@@ -198,7 +198,7 @@ export default function Ergo() {
                 роботи вашого обладнання. Звертайтеся до нас вже зараз, і ваш
                 телевізор Ergo знову буде працювати на повну потужність!
               </p>
-            </div>
+            </Styled.Page>
           )}
         </Container>
       </Section>

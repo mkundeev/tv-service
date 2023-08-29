@@ -27,7 +27,7 @@ export default function Grunding() {
       <Section $screenHeight>
         <Container>
           {locale === "ru" ? (
-            <div>
+            <Styled.Page>
               <h1>
                 Ремонт телевизоров Grundig: качественное восстановление вашего
                 телевизионного опыта
@@ -118,9 +118,9 @@ export default function Grunding() {
                 сегодня, и ваш телевизор Grundig снова станет надежным
                 источником развлечений и информации!
               </p>
-            </div>
+            </Styled.Page>
           ) : (
-            <div>
+            <Styled.Page>
               <h1>
                 Ремонт телевізорів Grundig: якісна реставрація вашого
                 телевізійного досвіду
@@ -210,7 +210,7 @@ export default function Grunding() {
                 обладнання. Зверніться до нас вже сьогодні, і ваш телевізор
                 Grundig знову стане надійним джерелом розваг та інформації!
               </p>
-            </div>
+            </Styled.Page>
           )}
         </Container>
       </Section>

@@ -27,7 +27,7 @@ export default function Sony() {
       <Section $screenHeight>
         <Container>
           {locale === "ru" ? (
-            <div>
+            <Styled.Page>
               <h1>
                 Профессиональные услуги по ремонту телевизоров Sony: Обеспечение
                 оптимального качества развлечений
@@ -138,9 +138,9 @@ export default function Sony() {
                 запланировать ремонт и вернуть ваш телевизор Sony к максимальной
                 производительности.
               </p>
-            </div>
+            </Styled.Page>
           ) : (
-            <div>
+            <Styled.Page>
               <h1>
                 Професійний ремонт телевізорів Sony: Забезпечення оптимального
                 рівня розваг
@@ -248,7 +248,7 @@ export default function Sony() {
                 Зв'яжіться з нами сьогодні, щоб запланувати ремонт і повернути
                 ваш телевізор Sony до пікової продуктивності.
               </p>
-            </div>
+            </Styled.Page>
           )}
         </Container>
       </Section>

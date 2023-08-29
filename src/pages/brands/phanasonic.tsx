@@ -27,7 +27,7 @@ export default function Phanasonic() {
       <Section $screenHeight>
         <Container>
           {locale === "ru" ? (
-            <div>
+            <Styled.Page>
               <h1>
                 Профессиональные услуги по ремонту телевизоров Phanasonic:
                 Надежные решения для вашего телевизора Phanasonic
@@ -130,9 +130,9 @@ export default function Phanasonic() {
                 ремонт и оценить надежность, эффективность и качество наших
                 услуг по ремонту телевизоров.
               </p>
-            </div>
+            </Styled.Page>
           ) : (
-            <div>
+            <Styled.Page>
               <h1>
                 Професійні послуги з ремонту телевізорів Phanasonic: Надійні
                 рішення для вашого телевізора Phanasonic
@@ -231,7 +231,7 @@ export default function Phanasonic() {
                 нами сьогодні, щоб назначити ремонт і переконатися в надійності,
                 ефективності та якості наших послуг з ремонту телевізорів.
               </p>
-            </div>
+            </Styled.Page>
           )}
         </Container>
       </Section>
