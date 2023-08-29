@@ -1,29 +1,13 @@
 import Section from "@/components/common/styles/Section.styled";
 import Container from "@/components/common/styles/Container.styled";
-import Head from "next/head";
+import Layout from "@/components/BrandsPage/Layout";
 import { useRouter } from "next/router";
 import * as Styled from "@/components/BrandsPage/styles/BrandsPages.styled";
 
 export default function Grunding() {
   const { locale } = useRouter();
   return (
-    <>
-      <Head>
-        <title>
-          {locale === "ua"
-            ? "Ремонт телевізорів Grunding"
-            : "Ремонт телевизоров Grunding"}
-        </title>
-        <meta
-          name="description"
-          key="desc"
-          content={
-            locale === "ua"
-              ? "Ремонт телевізорів Grunding у Києві"
-              : "Ремонт телевізорів Grunding в Киеве"
-          }
-        />
-      </Head>
+    <Layout>
       <Section $screenHeight>
         <Container>
           {locale === "ru" ? (
@@ -214,6 +198,6 @@ export default function Grunding() {
           )}
         </Container>
       </Section>
-    </>
+    </Layout>
   );
 }

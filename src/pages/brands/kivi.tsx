@@ -1,29 +1,13 @@
 import Section from "@/components/common/styles/Section.styled";
 import Container from "@/components/common/styles/Container.styled";
-import Head from "next/head";
+import Layout from "@/components/BrandsPage/Layout";
 import { useRouter } from "next/router";
 import * as Styled from "@/components/BrandsPage/styles/BrandsPages.styled";
 
 export default function Kivi() {
   const { locale } = useRouter();
   return (
-    <>
-      <Head>
-        <title>
-          {locale === "ua"
-            ? "Ремонт телевізорів Kivi"
-            : "Ремонт телевизоров Kivi"}
-        </title>
-        <meta
-          name="description"
-          key="desc"
-          content={
-            locale === "ua"
-              ? "Ремонт телевізорів Kivi у Києві"
-              : "Ремонт телевізорів Kivi в Киеве"
-          }
-        />
-      </Head>
+    <Layout>
       <Section $screenHeight>
         <Container>
           {locale === "ru" ? (
@@ -166,6 +150,6 @@ export default function Kivi() {
           )}
         </Container>
       </Section>
-    </>
+    </Layout>
   );
 }

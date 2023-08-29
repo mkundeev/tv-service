@@ -1,29 +1,14 @@
 import Section from "@/components/common/styles/Section.styled";
 import Container from "@/components/common/styles/Container.styled";
-import Head from "next/head";
 import { useRouter } from "next/router";
 import * as Styled from "@/components/BrandsPage/styles/BrandsPages.styled";
+import Layout from "@/components/BrandsPage/Layout";
 
 export default function Pioneer() {
   const { locale } = useRouter();
   return (
-    <>
-      <Head>
-        <title>
-          {locale === "ua"
-            ? "Ремонт телевізорів Pioneer"
-            : "Ремонт телевизоров Pioneer"}
-        </title>
-        <meta
-          name="description"
-          key="desc"
-          content={
-            locale === "ua"
-              ? "Ремонт телевізорів Pioneer у Києві"
-              : "Ремонт телевізорів Pioneer в Киеве"
-          }
-        />
-      </Head>
+    <Layout>
+
       <Section $screenHeight>
         <Container>
           {locale === "ru" ? (
@@ -216,6 +201,6 @@ export default function Pioneer() {
           )}
         </Container>
       </Section>
-    </>
+    </Layout>
   );
 }
